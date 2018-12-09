@@ -1,0 +1,1441 @@
+<!-- https://sneakerstudio.pl/product-pol-16782-Czapka-meska-adidas-Originals-Trefoil-CD6973.html -->
+
+<!DOCTYPE html>
+<html><head><meta name='viewport' content='user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, width=device-width'/> <meta name="theme-color" content="#B99C44" /> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Czapka męska adidas Originals Trefoil CD6973 - kup za 69,00 zł - sklep SneakerStudio.pl</title><meta name="keywords" content=""><meta name="description" content="Czapka męska adidas Originals Trefoil CD6973 w sklepie SneakerStudio.pl. ✅Wysyłka gratis! 30 dni na zwrot lub wymianę. Sprawdź produkty  w kategorii Akcesoria i dodatki producenta adidas Originals."><link rel="shortcut icon" href="/gfx/pol/favicon.ico"><link rel="stylesheet" type="text/css" href="/gfx/pol/style.css.gzip?r=1536225480"><script type="text/javascript" src="/gfx/pol/shop.js.gzip?r=1536225480"></script><meta name="robots" content="INDEX,FOLLOW,NOODP"><meta name="rating" content="general"><meta name="Author" content="SneakerStudio.pl na bazie IAI-Shop.com (www.iai-shop.com).">
+<!-- Open Graph -->
+<meta property="og:type" content="website"><meta property="og:url" content="https://sneakerstudio.pl/product-pol-16782-Czapka-meska-adidas-Originals-Trefoil-CD6973.html"><meta property="og:title" content="Czapka męska adidas Originals Trefoil CD6973"><meta property="og:description" content="Czapka adidas Originals Trefoil CD6973"><meta property="og:site_name" content="SneakerStudio.pl"><meta property="og:locale" content="pl_PL"><meta property="og:image" content="https://sneakerstudio.pl/data/gfx/pictures/medium/2/8/16782_1.jpg"><meta property="og:image:width" content="550"><meta property="og:image:height" content="550">
+<!-- End Open Graph -->
+<!-- Google Analytics -->
+                        <script  type="text/javascript">
+                        (function(i,s,o,g,r,a,m){
+                            i['GoogleAnalyticsObject']=r;
+                            i[r]=i[r]||function() {
+                                (i[r].q=i[r].q||[]).push(arguments)
+                            },
+                            i[r].l=1*new Date();
+                            a=s.createElement(o), m=s.getElementsByTagName(o)[0];
+                            a.async=1;
+                            a.src=g;
+                            m.parentNode.insertBefore(a,m)
+                            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                        </script> 
+                        <script type="text/javascript">
+                        ga('create', 'UA-59465420-1', 'sneakerstudio.pl');
+                        ga('send', 'pageview');
+
+                        ga('create', 'UA-87762481-2', 'sneakerstudio.pl', 'iaiTracker', {'sampleRate': 3}); 
+                        ga('iaiTracker.send', 'pageview');ga('send', 'event','Distinction','Nowość','',0, {'nonInteraction': true});</script>
+                    <!-- End Google Analytics -->
+<!-- Begin additional html or js -->
+
+<script type="text/javascript">//app_shop.txt.txt_expand_it  = <iai:variable vid="expand_it" description="Rozwiń" />
+//app_shop.txt.txt_collapse_it  = <iai:variable vid="collapse_it" description="Zwiń" />
+app_shop.txt.txt_expand_it  = "Rozwiń";
+app_shop.txt.txt_collapse_it  = "Zwiń";
+
+/*** JS - V5 ***/
+
+/* Deklaracja callback */
+var filtering_callback = function() { /* void */ }
+/*  callback po tym jak form został uzupełniony/a , czyli po click a przed wysłaniem AJAX*/
+var filtering_callback_click = function() { /* void */ }
+
+/* filtrownie V5 - ajax */
+var xhr = '';
+//var v66412_ajax_off     = <iai:variable vid="v66412_ajax_off" description="true - brak AJAX" />
+//var v66412_suwaczek_on  = <iai:variable vid="v66412_suwaczek_on" description="true - włącz suwak" />
+var v66412_ajax_off     = false;
+var v66412_suwaczek_on  = 'true'
+
+    var filter_active_ajax = function(global, global_status, filter_id) {
+
+      if ( !global ) {  
+        if ( $('#'+filter_id+'_toggle').is(':visible') ) {
+          $('#'+filter_id+'_toggle').hide(); 
+          $('#'+filter_id+'_loader').show();
+        } else {
+          $('#'+filter_id+'_toggle').show(); $('#'+filter_id+'_loader').hide();
+        }
+      }
+      else {
+        if ( global_status == true ) {
+          $('a.filter_toggle[id != "filter_text_toggle"]').hide(); 
+          $('span.filter_loader[id != "filter_text_loader"]').show();
+        } else {
+          $('a.filter_toggle[id != "filter_text_toggle"]').show(); 
+          $('span.filter_loader[id != "filter_text_loader"]').hide();
+        }
+      }
+    }
+
+    var filter_response_ajax = function(xml) {    
+      // dla każdego filtra
+      //for (n=0;filterJSON.filter.length;n++) {
+      $('navigation>filtering>filter', xml).each(function(){
+        var $this = $(this);
+        var filter_id = $this.attr('id').replace('[','').replace(']','');
+        if ( $('#'+filter_id).length && filter_id != 'filter_text' ) {
+          $this.find('>item').each(function(){
+            var $this = $(this);
+            var quantity = $this.attr('quantity');
+            var value = $this.attr('value');
+
+            if ( quantity ) {
+              if ( quantity > 0 ) {
+                // oznacz jako dostępny z quantity
+                $('#'+filter_id+'_val'+value+'_quantity').show();
+                $('#'+filter_id+'_val'+value+'_quantity span.filter_quantity_value').html(quantity);      
+                $('#'+filter_id+'_val'+value).removeAttr('disabled');
+                $('#'+filter_id+'_'+value+'_box').removeClass('disabled'); 
+              }else{
+                // oznacz jako dostępny z quantity == 0
+                $('#'+filter_id+'_val'+value+'_quantity').show();
+                $('#'+filter_id+'_val'+value+'_quantity span.filter_quantity_value').html(quantity);        
+                $('#'+filter_id+'_val'+value).attr('disabled','disabled');
+                $('#'+filter_id+'_'+value+'_box').addClass('disabled');
+              }
+            }else{
+              // oznacz jako dostępny bez quantity
+              $('#'+filter_id+'_val'+value+'_quantity').hide();
+              $('#'+filter_id+'_val'+value).removeAttr('disabled');
+              $('#'+filter_id+'_'+value+'_box').removeClass('disabled'); 
+            }
+
+          });
+          $('div.filter_item.list_type').each(function(){
+            if($(this).find('li').not('.disabled').length){
+              $(this).find('h3 a').removeClass('active');
+            }else{
+              $(this).find('h3 a').addClass('active');
+            }
+          });
+          filter_active_ajax(true, false);
+        }else{
+          // nie ma takiego filtra
+        }
+      })
+    }
+
+
+    var filter_prepare_ajaxfilter = function() {
+
+      filter_fill_form();
+
+      if(v66412_ajax_off==='true'){filter_submit();return false;}
+
+      var filter_data = $('#filter_form').serialize();
+      xhr = filter_send_ajaxfilter(xhr, filter_data);
+      filter_active_ajax(true, true);
+
+    }
+
+    var filter_send_ajaxfilter = function(xhr, filter_data) {
+
+      xhr = xhr;
+      if(xhr && xhr.readystate != 4){
+        xhr.abort();
+        filter_active_ajax(true, false);
+      }
+
+      xhr = $.ajax({
+        type: 'GET',
+        //timeout: 8000,
+        url: '/search.php?'+filter_data+'&getProductXML=true&xmlType=filtering',
+        //dataType: 'xml',
+        dataType: 'text',
+        success: function(xml){
+          filter_response_ajax(xml);
+        },
+        error: function(xml, sTextStatus, oErrorThrown) {
+          filter_active_ajax(true, false);
+        }  
+      });
+      return xhr;
+    }
+    /* /filtrownie V5 - ajax */
+
+    /* Literały */
+    //var txt_66412_008_001 = <iai:variable vid="66412_008_001" description="wybierz datę" />
+    var txt_66412_008_001 = 'wybierz datę';
+
+      /* Wyrównanie */
+      $.fn.setOneHeight=function(){var a=0;$(this).each(function(){if($(this).height()>a){a=$(this).height();}});$(this).css('height',a);}
+
+    var align_filter_gfx = function(id) {
+      if ( id ) { $('#'+id+' li').setOneHeight(); } 
+      else { 
+        $('#menu_filter div.filter_gfxonly').each(function() { if ( $(this).is(':visible') ) {$(this).find('li').setOneHeight(); } }); 
+      }
+    }
+
+    /* Wyrównanie */
+    function set_filter_cookie() {
+      var filter_hidden_list = new Array();
+      $('#menu_filter a.filter_toggle.active').each(function() {
+        filter_hidden_list.push($(this).attr('href').substring(8));
+      });
+      $.cookie('filter_hidden', '', { expires: 355 });
+      $.cookie('filter_hidden', filter_hidden_list, { expires: 355 });
+    }
+
+function get_filter_cookie() {
+  var flistA = $.cookie('filter_hidden');
+  if ( !!flistA ) {
+    var flist = flistA.split(',');
+    for(var i=0;i < flist.length;i++) {
+      $('#menu_filter a.filter_toggle[href="#toggle_'+flist[i]+'"]').addClass('active');
+      $('#'+flist[i]).addClass('filter_hide').removeClass('filter_show').hide();
+    }
+  }
+}
+/* /Ukrywanie filtrów */
+
+/* Button - zastosuj */
+var show_options = function() { 
+  $('#menu_filter div.list_type, #menu_filter div.dual_type').each(function() {
+    if ( $(this).find('input').is(':checked') ) {
+      $('a.filter_submit[data-filter="'+$(this).attr('id')+'"]').show('fast');
+      $('#filter_buttons').show('fast');
+    }
+  });
+}
+/* /Button - zastosuj */
+
+/* Button - pokaż wszystkie */
+var filter_showall = function(obj) {    
+  if ( obj.hasClass('active') ) {
+    obj.removeClass('active');
+    obj.html(filter_pokaz);
+    $('#'+obj.attr('data-filter')+' li.filterhidden').removeClass('showhidden');
+  } else {
+    obj.addClass('active');
+    obj.html(filter_ukryj);
+    $('#'+obj.attr('data-filter')+' li.filterhidden').addClass('showhidden');
+  }
+}
+
+
+/* /Button - pokaż wszystkie */
+
+/* Wypełnienie formularza na starcie */
+var filter_fill_form = function() {
+
+
+  /* list_type */
+  $('#menu_filter div.filter_item.list_type').each(function() {
+    var fID = $(this).attr('id');
+    var fvt = new Array();
+    $('#'+fID+'_content input[type=checkbox]:checked').each(function() {
+      if ($(this).attr('disabled') != 'disabled' ) { fvt.push($(this).val()); }
+    });
+    $('#'+fID+'_form').val(fvt);
+  });
+
+  if(!$('#filter_price_content input[type="checkbox"]:checked').size()){
+    /* range */
+    $('#menu_filter div.filter_range').each(function() {
+      var fV = $('#'+$(this).attr('data-filter')+'_range_from').val()+'-'+$('#'+$(this).attr('data-filter')+'_range_to').val();
+      if ( fV != '-' ) { $('#'+$(this).attr('data-filter')+'_form').val(fV); }
+    });
+  }
+
+  /* dual_type */
+  $('#menu_filter div.filter_item.dual_type input').each(function() {
+    if ( $(this).is(':checked') && $(this).attr('disabled') != 'disabled') { $('#'+$(this).attr('id')+'_form').val('y'); } 
+    else { $('#'+$(this).attr('id')+'_form').val('') }  
+  });
+
+  /* text */
+  if ( $('#filter_text_input').length && $('#filter_text_input').val() != $('#filter_text_input').attr('data-filter') ) { $('#filter_text_form').val($('#filter_text_input').val()); } 
+
+
+
+
+  filtering_callback_click();
+}
+/* /Wypełnienie formularza na starcie */
+
+/* Wysłanie formularza */
+var filter_submit = function() {
+
+  //Wypełnienie formularza
+  filter_fill_form();
+
+  //Wysłanie formularza 
+  $('#filter_form').submit();
+
+}
+/* /Wysłanie formularza */
+
+/* oznaczenie aktywnych filtrów na starcie */
+var mark_active = function(obj) {
+  if ( $('#filter_dual #'+obj).length ) {
+    obj_box = obj+'_y_box';
+    if ( $('#'+obj).is(':checked') ) { $('#'+obj_box).addClass('enabled'); } else { $('#'+obj_box).removeClass('enabled'); }
+  } else {
+    obj_box = obj.replace('_val','_')+'_box';
+    if ( $('#'+obj).is(':checked') ) { $('#'+obj_box).addClass('enabled'); } else { $('#'+obj_box).removeClass('enabled'); }
+  }
+}
+
+/* Korekta dla buga pod IE 7 i 8 - brak zaznaczenia dla 'label img' 
+if( (navigator.appVersion.indexOf("MSIE 8.")>-1 || navigator.appVersion.indexOf("MSIE 7.")>-1) && navigator.appVersion.indexOf("Windows")>-1 )
+{
+    $("label img").live("click", function() {
+      $("#" + $(this).parents("label").attr("for")).click();
+    });
+}
+*/
+
+
+function menu_filter_init() {
+
+  /* Scroll do góry strony po przeładowaniu */
+  // if ( $('#menu_filter').length ) { $(this).scrollTop(0); }
+
+  /* Oznacz jako zaznaczony filtr na starcie */
+  $('#menu_filter div.menu_filter_wrapper input[type=checkbox]').each(function() { mark_active($(this).attr('id')); });
+  $('#menu_filter div.menu_filter_wrapper input[type=checkbox]').change(function() { mark_active($(this).attr('id')); });
+
+  /* Wypełnienie formularza na starcie */
+  filter_fill_form();
+
+  /* Wysłanie formularza na enter w input[text] */
+  $('#menu_filter input[type=text]').on('keyup', function(e) {
+    if (e.which == 13) { filter_submit(); }
+  });
+
+  /* Filtr list_type - click */
+  $('#menu_filter div.filter_item.list_type input[type="checkbox"]').click(function() { 
+    var fID = String($(this).attr('id')).substring(0, String($(this).attr('id')).indexOf('_val'));
+    $('a.filter_submit[data-filter="'+fID+'"]').show('fast');
+    $('#filter_buttons').show('fast');
+    var fvt = new Array();
+    $('#'+fID+'_content input[type="checkbox"]').each(function() {
+      if ( $(this).is(':checked') ) { fvt.push($(this).val()); }
+    });
+    $('#'+fID+'_form').val(fvt);
+    if ( $(this).attr('id') != 'filter_price_range_from' && $(this).attr('id') != 'filter_price_range_to' &&  $(this).attr('id') != 'filter_text_input' && $(this).attr('id') != 'filter_date_datepicker' && $(this).attr('data-filter') != 'filter_date_option' ) {
+      filter_prepare_ajaxfilter();
+    }
+  });
+
+  /* Filtr dual_type - click */
+  $('#menu_filter div.filter_item.dual_type input').click(function() { 
+    if ( $(this).is(':checked') ) { $('#'+$(this).attr('id')+'_form').val('y'); } 
+    else { $('#'+$(this).attr('id')+'_form').val('') }
+    $('a.filter_submit[data-filter="filter_dual"]').show('fast');
+    $('#filter_buttons').show('fast');
+    filter_prepare_ajaxfilter();
+  });
+
+  /* Filtr text - click */
+  $('#filter_text_input').focus(function() { if ( $(this).val() == $(this).attr('data-filter') ) { $(this).val('');} });
+  $('#filter_text_submit').click(function() { filter_submit(); });
+  $('#filter_text_input').keyup(function() { $('#filter_text_form').val($('#filter_text_input').val()); });
+
+  /* Filtr - range */
+  $('#menu_filter a.filter_submit_range').click (function() { 
+    filter_fill_form();
+
+    $('#menu_filter div.filter_range').each(function() {
+      //$('#'+$(this).attr('data-filter').replace('_range','_content')+' input[type="checkbox"]').prop('checked',false);
+      var fV = $('#'+$(this).attr('data-filter')+'_range_from').val()+'-'+$('#'+$(this).attr('data-filter')+'_range_to').val();
+      if ( fV != '-' ) { $('#'+$(this).attr('data-filter')+'_form').val(fV); }
+    });
+
+    $('#filter_form').submit();
+  });
+
+  /* Filter - data dodania */
+  if ( $('#filter_date').length ) {
+    $('#filter_date input[type="checkbox"]').click(function() {
+      var tP = $(this).prop('checked');
+      $('#filter_date input').prop('checked',false);
+      if ( !tP ) { $(this).prop('checked',false); } else { $(this).prop('checked',true); }
+      if ( $(this).attr('id') != 'filter_date_calendar_picker' ) {
+        $('#filter_date_calendar_picker').val('');
+        $(this).parents('ul').find('span.filter_calendar_from').hide();
+        $('#filter_date_datepicker').val(txt_66412_008_001);
+      }
+      filter_prepare_ajaxfilter();
+    });
+
+    $('.filter_datepicker').datepicker({
+      onSelect: function(dateText, inst) {  
+        $(this).parent().find('span.filter_calendar_from').show();
+        $('#'+$(this).attr('id').replace('_datepicker','')+' input[type="checkbox"]').prop('checked',false);
+        $(this).parent().find('input.filter_calendar').val($(this).val());
+        $(this).parent().find('input.filter_calendar').prop('checked',true);
+        $('#'+$(this).attr('id').replace('_datepicker','_submit')).show('fast');
+      },
+      dateFormat: iaical_dateFormat,          
+      dayNamesMin: iaical_daysShort,
+      monthNames: iaical_monthNames,
+      nextText: iaical_monthNext,
+      firstDay: iaical_firstDay,
+      prevText: iaical_monthPrev
+    });
+
+    $('.filter_datepicker').datepicker( "option", "dateFormat", "yy-mm-dd" );
+    datepicker_min_year = parseInt(datepicker_min.substring(0, 4)); datepicker_min_month = parseInt(datepicker_min.substring(5, 7)); datepicker_min_day = parseInt(datepicker_min.substring(8, 10));
+    datepicker_max_year = parseInt(datepicker_max.substring(0, 4)); datepicker_max_month = parseInt(datepicker_max.substring(5, 7)); datepicker_max_day = parseInt(datepicker_max.substring(8, 10));
+    var minDate = $( ".filter_datepicker" ).datepicker( "option", "minDate" );
+    $( ".filter_datepicker" ).datepicker( "option", "minDate", new Date(datepicker_min_year, datepicker_min_month - 1, datepicker_min_day) );
+    var maxDate = $( ".filter_datepicker" ).datepicker( "option", "maxDate" );
+    $( ".filter_datepicker" ).datepicker( "option", "maxDate", new Date(datepicker_max_year, datepicker_max_month - 1, datepicker_max_day) );
+    $('.filter_datepicker').each(function() { $(this).val($(this).attr('data-filter')); });
+  }
+
+  if ( $('#menu_filter').length ) {
+    $('#ui-datepicker-div a').live('click', function() { filter_prepare_ajaxfilter(); });
+  }
+  /* /Filter - data dodania */
+
+  /* Ukrycie filtrów oznaczonych jak ukryte */
+  get_filter_cookie();
+
+  /* Button zastosuj - przypisanie na starcie */
+  //show_options();
+  $('a.filter_submit').click(function() { filter_submit(); });
+  $('a.show_all').click(function() { filter_showall($(this)); });
+
+  /* Pokaż/Ukryj filtr - click */
+  $('#menu_filter a.filter_toggle').click(function() {
+
+    if ( $(this).hasClass('active') ) {
+      $(this).removeClass('active');
+      $('#'+$(this).attr('href').substring(8)).addClass('filter_hide').removeClass('filter_show').slideToggle( 'fast', function(){$('body').resize()});
+      set_filter_cookie();
+      if ( $('#'+$(this).attr('id').replace('_toggle','_content')).hasClass('filter_gfxonly') ) { align_filter_gfx($(this).attr('id').replace('_toggle','')); }
+    } else {
+      $(this).addClass('active');
+      $('#'+$(this).attr('href').substring(8)).addClass('filter_show').removeClass('filter_hide').slideToggle('fast', function(){$('body').resize()});
+      set_filter_cookie();
+    }
+
+    return false;
+  });
+
+  /* Filtr gfxonly */
+  $('#menu_filter div.filter_item.list_type label').click(function() {
+    if ( !$('#'+$(this).attr('for').replace('_val','_')+'_box').hasClass('disabled') ) {
+      if ( $('#'+$(this).attr('for')).prop('checked') ) { $(this).removeClass('active'); }
+      else { $(this).addClass('active'); }
+    }
+  });
+
+  simple_tooltip("div.filter_gfxonly img","filter_tooltip");
+
+  /* Zastosuj wybrane filtry - click */
+  //$('#filter_buttons a.filters_submit').click(function() { filter_submit(); });
+
+  /* Filter top */
+  // if ( $.cookie("filterTop" )){ $(window).scrollTop($.cookie("filterTop")); $.cookie("filterTop", null); }
+  $('#menu_filter form').submit(function(){ $.cookie("filterTop", $(window).scrollTop()); return true; });
+  /* /Filter top */
+
+  /*suwaczek*/
+    if(v66412_suwaczek_on) {
+      
+    $("#slider-price").slider({
+        range: true,
+        min: parseInt($("#min_price_start").val()),
+        max: parseInt($("#max_price_start").val()),
+        values: [parseInt( $("#min_price_set").val() || $("#min_price_start").val() ), parseInt( $("#max_price_set").val() || $("#max_price_start").val() )],
+        slide: function(event, ui) {
+            $("#filter_price_range_from").val(ui.values[0]);
+            $("#filter_price_range_to").val(ui.values[1]);
+        },
+        
+        stop: function(event, ui) {
+        
+            $("#filter_price_range_from").val(ui.values[0]);
+            $("#filter_price_range_to").val(ui.values[1]);
+            $('#filter_price_form').val(ui.values[0]+'-'+ui.values[1]);
+            search_filter();
+        }
+    });
+  }
+
+  
+
+}
+
+
+
+$(window).load(function() {
+  /* Wyrównanie - gfxonly i gfx */
+  align_filter_gfx();
+
+  /* Scroll do góry strony po przeładowaniu */
+  // if ( $('#menu_filter').length ) { $(this).scrollTop(0); }
+});
+
+/*** JS - V5 END ***/
+
+var begin_mscroll = "";
+
+/*  Licensed under the MIT License (LICENSE.txt).
+ * Version: 3.0.6 Requires: 1.2.2+
+ */
+(function(a){function d(b){var c=b||window.event,d=[].slice.call(arguments,1),e=0,f=!0,g=0,h=0;return b=a.event.fix(c),b.type="mousewheel",c.wheelDelta&&(e=c.wheelDelta/120),c.detail&&(e=-c.detail/3),h=e,c.axis!==undefined&&c.axis===c.HORIZONTAL_AXIS&&(h=0,g=-1*e),c.wheelDeltaY!==undefined&&(h=c.wheelDeltaY/120),c.wheelDeltaX!==undefined&&(g=-1*c.wheelDeltaX/120),d.unshift(b,e,g,h),(a.event.dispatch||a.event.handle).apply(this,d)}var b=["DOMMouseScroll","mousewheel"];if(a.event.fixHooks)for(var c=b.length;c;)a.event.fixHooks[b[--c]]=a.event.mouseHooks;a.event.special.mousewheel={setup:function(){if(this.addEventListener)for(var a=b.length;a;)this.addEventListener(b[--a],d,!1);else this.onmousewheel=d},teardown:function(){if(this.removeEventListener)for(var a=b.length;a;)this.removeEventListener(b[--a],d,!1);else this.onmousewheel=null}},a.fn.extend({mousewheel:function(a){return a?this.bind("mousewheel",a):this.trigger("mousewheel")},unmousewheel:function(a){return this.unbind("mousewheel",a)}})})(jQuery);
+
+
+var start_mscroll = "";
+
+/* == malihu jquery custom scrollbar plugin == Version: 3.0.8, License: MIT License (MIT) */
+!function(e){"undefined"!=typeof module&&module.exports?module.exports=e:e(jQuery,window,document)}(function(e){!function(t){var o="function"==typeof define&&define.amd,a="undefined"!=typeof module&&module.exports,n="https:"==document.location.protocol?"https:":"http:",i="cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js";o||(a?require("jquery-mousewheel")(e):e.event.special.mousewheel||e("head").append(decodeURI("%3Cscript src="+n+"//"+i+"%3E%3C/script%3E"))),t()}(function(){var t,o="mCustomScrollbar",a="mCS",n=".mCustomScrollbar",i={setTop:0,setLeft:0,axis:"y",scrollbarPosition:"inside",scrollInertia:950,autoDraggerLength:!0,alwaysShowScrollbar:0,snapOffset:0,mouseWheel:{enable:!0,scrollAmount:"auto",axis:"y",deltaFactor:"auto",disableOver:["select","option","keygen","datalist","textarea"]},scrollButtons:{scrollType:"stepless",scrollAmount:"auto"},keyboard:{enable:!0,scrollType:"stepless",scrollAmount:"auto"},contentTouchScroll:25,advanced:{autoScrollOnFocus:"input,textarea,select,button,datalist,keygen,a[tabindex],area,object,[contenteditable='true']",updateOnContentResize:!0,updateOnImageLoad:!0},theme:"light",callbacks:{onTotalScrollOffset:0,onTotalScrollBackOffset:0,alwaysTriggerOffsets:!0}},r=0,l={},s=window.attachEvent&&!window.addEventListener?1:0,c=!1,d=["mCSB_dragger_onDrag","mCSB_scrollTools_onDrag","mCS_img_loaded","mCS_disabled","mCS_destroyed","mCS_no_scrollbar","mCS-autoHide","mCS-dir-rtl","mCS_no_scrollbar_y","mCS_no_scrollbar_x","mCS_y_hidden","mCS_x_hidden","mCSB_draggerContainer","mCSB_buttonUp","mCSB_buttonDown","mCSB_buttonLeft","mCSB_buttonRight"],u={init:function(t){var t=e.extend(!0,{},i,t),o=f.call(this);if(t.live){var s=t.liveSelector||this.selector||n,c=e(s);if("off"===t.live)return void m(s);l[s]=setTimeout(function(){c.mCustomScrollbar(t),"once"===t.live&&c.length&&m(s)},500)}else m(s);return t.setWidth=t.set_width?t.set_width:t.setWidth,t.setHeight=t.set_height?t.set_height:t.setHeight,t.axis=t.horizontalScroll?"x":p(t.axis),t.scrollInertia=t.scrollInertia>0&&t.scrollInertia<17?17:t.scrollInertia,"object"!=typeof t.mouseWheel&&1==t.mouseWheel&&(t.mouseWheel={enable:!0,scrollAmount:"auto",axis:"y",preventDefault:!1,deltaFactor:"auto",normalizeDelta:!1,invert:!1}),t.mouseWheel.scrollAmount=t.mouseWheelPixels?t.mouseWheelPixels:t.mouseWheel.scrollAmount,t.mouseWheel.normalizeDelta=t.advanced.normalizeMouseWheelDelta?t.advanced.normalizeMouseWheelDelta:t.mouseWheel.normalizeDelta,t.scrollButtons.scrollType=g(t.scrollButtons.scrollType),h(t),e(o).each(function(){var o=e(this);if(!o.data(a)){o.data(a,{idx:++r,opt:t,scrollRatio:{y:null,x:null},overflowed:null,contentReset:{y:null,x:null},bindEvents:!1,tweenRunning:!1,sequential:{},langDir:o.css("direction"),cbOffsets:null,trigger:null});var n=o.data(a),i=n.opt,l=o.data("mcs-axis"),s=o.data("mcs-scrollbar-position"),c=o.data("mcs-theme");l&&(i.axis=l),s&&(i.scrollbarPosition=s),c&&(i.theme=c,h(i)),v.call(this),e("#mCSB_"+n.idx+"_container img:not(."+d[2]+")").addClass(d[2]),u.update.call(null,o)}})},update:function(t,o){var n=t||f.call(this);return e(n).each(function(){var t=e(this);if(t.data(a)){var n=t.data(a),i=n.opt,r=e("#mCSB_"+n.idx+"_container"),l=[e("#mCSB_"+n.idx+"_dragger_vertical"),e("#mCSB_"+n.idx+"_dragger_horizontal")];if(!r.length)return;n.tweenRunning&&V(t),t.hasClass(d[3])&&t.removeClass(d[3]),t.hasClass(d[4])&&t.removeClass(d[4]),S.call(this),_.call(this),"y"===i.axis||i.advanced.autoExpandHorizontalScroll||r.css("width",x(r.children())),n.overflowed=B.call(this),O.call(this),i.autoDraggerLength&&b.call(this),C.call(this),k.call(this);var s=[Math.abs(r[0].offsetTop),Math.abs(r[0].offsetLeft)];"x"!==i.axis&&(n.overflowed[0]?l[0].height()>l[0].parent().height()?T.call(this):(Q(t,s[0].toString(),{dir:"y",dur:0,overwrite:"none"}),n.contentReset.y=null):(T.call(this),"y"===i.axis?M.call(this):"yx"===i.axis&&n.overflowed[1]&&Q(t,s[1].toString(),{dir:"x",dur:0,overwrite:"none"}))),"y"!==i.axis&&(n.overflowed[1]?l[1].width()>l[1].parent().width()?T.call(this):(Q(t,s[1].toString(),{dir:"x",dur:0,overwrite:"none"}),n.contentReset.x=null):(T.call(this),"x"===i.axis?M.call(this):"yx"===i.axis&&n.overflowed[0]&&Q(t,s[0].toString(),{dir:"y",dur:0,overwrite:"none"}))),o&&n&&(2===o&&i.callbacks.onImageLoad&&"function"==typeof i.callbacks.onImageLoad?i.callbacks.onImageLoad.call(this):3===o&&i.callbacks.onSelectorChange&&"function"==typeof i.callbacks.onSelectorChange?i.callbacks.onSelectorChange.call(this):i.callbacks.onUpdate&&"function"==typeof i.callbacks.onUpdate&&i.callbacks.onUpdate.call(this)),X.call(this)}})},scrollTo:function(t,o){if("undefined"!=typeof t&&null!=t){var n=f.call(this);return e(n).each(function(){var n=e(this);if(n.data(a)){var i=n.data(a),r=i.opt,l={trigger:"external",scrollInertia:r.scrollInertia,scrollEasing:"mcsEaseInOut",moveDragger:!1,timeout:60,callbacks:!0,onStart:!0,onUpdate:!0,onComplete:!0},s=e.extend(!0,{},l,o),c=Y.call(this,t),d=s.scrollInertia>0&&s.scrollInertia<17?17:s.scrollInertia;c[0]=j.call(this,c[0],"y"),c[1]=j.call(this,c[1],"x"),s.moveDragger&&(c[0]*=i.scrollRatio.y,c[1]*=i.scrollRatio.x),s.dur=d,setTimeout(function(){null!==c[0]&&"undefined"!=typeof c[0]&&"x"!==r.axis&&i.overflowed[0]&&(s.dir="y",s.overwrite="all",Q(n,c[0].toString(),s)),null!==c[1]&&"undefined"!=typeof c[1]&&"y"!==r.axis&&i.overflowed[1]&&(s.dir="x",s.overwrite="none",Q(n,c[1].toString(),s))},s.timeout)}})}},stop:function(){var t=f.call(this);return e(t).each(function(){var t=e(this);t.data(a)&&V(t)})},disable:function(t){var o=f.call(this);return e(o).each(function(){var o=e(this);if(o.data(a)){{o.data(a)}X.call(this,"remove"),M.call(this),t&&T.call(this),O.call(this,!0),o.addClass(d[3])}})},destroy:function(){var t=f.call(this);return e(t).each(function(){var n=e(this);if(n.data(a)){var i=n.data(a),r=i.opt,l=e("#mCSB_"+i.idx),s=e("#mCSB_"+i.idx+"_container"),c=e(".mCSB_"+i.idx+"_scrollbar");r.live&&m(r.liveSelector||e(t).selector),X.call(this,"remove"),M.call(this),T.call(this),n.removeData(a),Z(this,"mcs"),c.remove(),s.find("img."+d[2]).removeClass(d[2]),l.replaceWith(s.contents()),n.removeClass(o+" _"+a+"_"+i.idx+" "+d[6]+" "+d[7]+" "+d[5]+" "+d[3]).addClass(d[4])}})}},f=function(){return"object"!=typeof e(this)||e(this).length<1?n:this},h=function(t){var o=["rounded","rounded-dark","rounded-dots","rounded-dots-dark"],a=["rounded-dots","rounded-dots-dark","3d","3d-dark","3d-thick","3d-thick-dark","inset","inset-dark","inset-2","inset-2-dark","inset-3","inset-3-dark"],n=["minimal","minimal-dark"],i=["minimal","minimal-dark"],r=["minimal","minimal-dark"];t.autoDraggerLength=e.inArray(t.theme,o)>-1?!1:t.autoDraggerLength,t.autoExpandScrollbar=e.inArray(t.theme,a)>-1?!1:t.autoExpandScrollbar,t.scrollButtons.enable=e.inArray(t.theme,n)>-1?!1:t.scrollButtons.enable,t.autoHideScrollbar=e.inArray(t.theme,i)>-1?!0:t.autoHideScrollbar,t.scrollbarPosition=e.inArray(t.theme,r)>-1?"outside":t.scrollbarPosition},m=function(e){l[e]&&(clearTimeout(l[e]),Z(l,e))},p=function(e){return"yx"===e||"xy"===e||"auto"===e?"yx":"x"===e||"horizontal"===e?"x":"y"},g=function(e){return"stepped"===e||"pixels"===e||"step"===e||"click"===e?"stepped":"stepless"},v=function(){var t=e(this),n=t.data(a),i=n.opt,r=i.autoExpandScrollbar?" "+d[1]+"_expand":"",l=["<div id='mCSB_"+n.idx+"_scrollbar_vertical' class='mCSB_scrollTools mCSB_"+n.idx+"_scrollbar mCS-"+i.theme+" mCSB_scrollTools_vertical"+r+"'><div class='"+d[12]+"'><div id='mCSB_"+n.idx+"_dragger_vertical' class='mCSB_dragger' style='position:absolute;' oncontextmenu='return false;'><div class='mCSB_dragger_bar' /></div><div class='mCSB_draggerRail' /></div></div>","<div id='mCSB_"+n.idx+"_scrollbar_horizontal' class='mCSB_scrollTools mCSB_"+n.idx+"_scrollbar mCS-"+i.theme+" mCSB_scrollTools_horizontal"+r+"'><div class='"+d[12]+"'><div id='mCSB_"+n.idx+"_dragger_horizontal' class='mCSB_dragger' style='position:absolute;' oncontextmenu='return false;'><div class='mCSB_dragger_bar' /></div><div class='mCSB_draggerRail' /></div></div>"],s="yx"===i.axis?"mCSB_vertical_horizontal":"x"===i.axis?"mCSB_horizontal":"mCSB_vertical",c="yx"===i.axis?l[0]+l[1]:"x"===i.axis?l[1]:l[0],u="yx"===i.axis?"<div id='mCSB_"+n.idx+"_container_wrapper' class='mCSB_container_wrapper' />":"",f=i.autoHideScrollbar?" "+d[6]:"",h="x"!==i.axis&&"rtl"===n.langDir?" "+d[7]:"";i.setWidth&&t.css("width",i.setWidth),i.setHeight&&t.css("height",i.setHeight),i.setLeft="y"!==i.axis&&"rtl"===n.langDir?"989999px":i.setLeft,t.addClass(o+" _"+a+"_"+n.idx+f+h).wrapInner("<div id='mCSB_"+n.idx+"' class='mCustomScrollBox mCS-"+i.theme+" "+s+"'><div id='mCSB_"+n.idx+"_container' class='mCSB_container' style='position:relative; top:"+i.setTop+"; left:"+i.setLeft+";' dir="+n.langDir+" /></div>");var m=e("#mCSB_"+n.idx),p=e("#mCSB_"+n.idx+"_container");"y"===i.axis||i.advanced.autoExpandHorizontalScroll||p.css("width",x(p.children())),"outside"===i.scrollbarPosition?("static"===t.css("position")&&t.css("position","relative"),t.css("overflow","visible"),m.addClass("mCSB_outside").after(c)):(m.addClass("mCSB_inside").append(c),p.wrap(u)),w.call(this);var g=[e("#mCSB_"+n.idx+"_dragger_vertical"),e("#mCSB_"+n.idx+"_dragger_horizontal")];g[0].css("min-height",g[0].height()),g[1].css("min-width",g[1].width())},x=function(t){return Math.max.apply(Math,t.map(function(){return e(this).outerWidth(!0)}).get())},_=function(){var t=e(this),o=t.data(a),n=o.opt,i=e("#mCSB_"+o.idx+"_container");n.advanced.autoExpandHorizontalScroll&&"y"!==n.axis&&i.css({position:"absolute",width:"auto"}).wrap("<div class='mCSB_h_wrapper' style='position:relative; left:0; width:999999px;' />").css({width:Math.ceil(i[0].getBoundingClientRect().right+.4)-Math.floor(i[0].getBoundingClientRect().left),position:"relative"}).unwrap()},w=function(){var t=e(this),o=t.data(a),n=o.opt,i=e(".mCSB_"+o.idx+"_scrollbar:first"),r=tt(n.scrollButtons.tabindex)?"tabindex='"+n.scrollButtons.tabindex+"'":"",l=["<a href='#' class='"+d[13]+"' oncontextmenu='return false;' "+r+" />","<a href='#' class='"+d[14]+"' oncontextmenu='return false;' "+r+" />","<a href='#' class='"+d[15]+"' oncontextmenu='return false;' "+r+" />","<a href='#' class='"+d[16]+"' oncontextmenu='return false;' "+r+" />"],s=["x"===n.axis?l[2]:l[0],"x"===n.axis?l[3]:l[1],l[2],l[3]];n.scrollButtons.enable&&i.prepend(s[0]).append(s[1]).next(".mCSB_scrollTools").prepend(s[2]).append(s[3])},S=function(){var t=e(this),o=t.data(a),n=e("#mCSB_"+o.idx),i=t.css("max-height")||"none",r=-1!==i.indexOf("%"),l=t.css("box-sizing");if("none"!==i){var s=r?t.parent().height()*parseInt(i)/100:parseInt(i);"border-box"===l&&(s-=t.innerHeight()-t.height()+(t.outerHeight()-t.innerHeight())),n.css("max-height",Math.round(s))}},b=function(){var t=e(this),o=t.data(a),n=e("#mCSB_"+o.idx),i=e("#mCSB_"+o.idx+"_container"),r=[e("#mCSB_"+o.idx+"_dragger_vertical"),e("#mCSB_"+o.idx+"_dragger_horizontal")],l=[n.height()/i.outerHeight(!1),n.width()/i.outerWidth(!1)],c=[parseInt(r[0].css("min-height")),Math.round(l[0]*r[0].parent().height()),parseInt(r[1].css("min-width")),Math.round(l[1]*r[1].parent().width())],d=s&&c[1]<c[0]?c[0]:c[1],u=s&&c[3]<c[2]?c[2]:c[3];r[0].css({height:d,"max-height":r[0].parent().height()-10}).find(".mCSB_dragger_bar").css({"line-height":c[0]+"px"}),r[1].css({width:u,"max-width":r[1].parent().width()-10})},C=function(){var t=e(this),o=t.data(a),n=e("#mCSB_"+o.idx),i=e("#mCSB_"+o.idx+"_container"),r=[e("#mCSB_"+o.idx+"_dragger_vertical"),e("#mCSB_"+o.idx+"_dragger_horizontal")],l=[i.outerHeight(!1)-n.height(),i.outerWidth(!1)-n.width()],s=[l[0]/(r[0].parent().height()-r[0].height()),l[1]/(r[1].parent().width()-r[1].width())];o.scrollRatio={y:s[0],x:s[1]}},y=function(e,t,o){var a=o?d[0]+"_expanded":"",n=e.closest(".mCSB_scrollTools");"active"===t?(e.toggleClass(d[0]+" "+a),n.toggleClass(d[1]),e[0]._draggable=e[0]._draggable?0:1):e[0]._draggable||("hide"===t?(e.removeClass(d[0]),n.removeClass(d[1])):(e.addClass(d[0]),n.addClass(d[1])))},B=function(){var t=e(this),o=t.data(a),n=e("#mCSB_"+o.idx),i=e("#mCSB_"+o.idx+"_container"),r=null==o.overflowed?i.height():i.outerHeight(!1),l=null==o.overflowed?i.width():i.outerWidth(!1);return[r>n.height(),l>n.width()]},T=function(){var t=e(this),o=t.data(a),n=o.opt,i=e("#mCSB_"+o.idx),r=e("#mCSB_"+o.idx+"_container"),l=[e("#mCSB_"+o.idx+"_dragger_vertical"),e("#mCSB_"+o.idx+"_dragger_horizontal")];if(V(t),("x"!==n.axis&&!o.overflowed[0]||"y"===n.axis&&o.overflowed[0])&&(l[0].add(r).css("top",0),Q(t,"_resetY")),"y"!==n.axis&&!o.overflowed[1]||"x"===n.axis&&o.overflowed[1]){var s=dx=0;"rtl"===o.langDir&&(s=i.width()-r.outerWidth(!1),dx=Math.abs(s/o.scrollRatio.x)),r.css("left",s),l[1].css("left",dx),Q(t,"_resetX")}},k=function(){function t(){r=setTimeout(function(){e.event.special.mousewheel?(clearTimeout(r),W.call(o[0])):t()},100)}var o=e(this),n=o.data(a),i=n.opt;if(!n.bindEvents){if(R.call(this),i.contentTouchScroll&&E.call(this),D.call(this),i.mouseWheel.enable){var r;t()}P.call(this),H.call(this),i.advanced.autoScrollOnFocus&&z.call(this),i.scrollButtons.enable&&U.call(this),i.keyboard.enable&&q.call(this),n.bindEvents=!0}},M=function(){var t=e(this),o=t.data(a),n=o.opt,i=a+"_"+o.idx,r=".mCSB_"+o.idx+"_scrollbar",l=e("#mCSB_"+o.idx+",#mCSB_"+o.idx+"_container,#mCSB_"+o.idx+"_container_wrapper,"+r+" ."+d[12]+",#mCSB_"+o.idx+"_dragger_vertical,#mCSB_"+o.idx+"_dragger_horizontal,"+r+">a"),s=e("#mCSB_"+o.idx+"_container");n.advanced.releaseDraggableSelectors&&l.add(e(n.advanced.releaseDraggableSelectors)),o.bindEvents&&(e(document).unbind("."+i),l.each(function(){e(this).unbind("."+i)}),clearTimeout(t[0]._focusTimeout),Z(t[0],"_focusTimeout"),clearTimeout(o.sequential.step),Z(o.sequential,"step"),clearTimeout(s[0].onCompleteTimeout),Z(s[0],"onCompleteTimeout"),o.bindEvents=!1)},O=function(t){var o=e(this),n=o.data(a),i=n.opt,r=e("#mCSB_"+n.idx+"_container_wrapper"),l=r.length?r:e("#mCSB_"+n.idx+"_container"),s=[e("#mCSB_"+n.idx+"_scrollbar_vertical"),e("#mCSB_"+n.idx+"_scrollbar_horizontal")],c=[s[0].find(".mCSB_dragger"),s[1].find(".mCSB_dragger")];"x"!==i.axis&&(n.overflowed[0]&&!t?(s[0].add(c[0]).add(s[0].children("a")).css("display","block"),l.removeClass(d[8]+" "+d[10])):(i.alwaysShowScrollbar?(2!==i.alwaysShowScrollbar&&c[0].css("display","none"),l.removeClass(d[10])):(s[0].css("display","none"),l.addClass(d[10])),l.addClass(d[8]))),"y"!==i.axis&&(n.overflowed[1]&&!t?(s[1].add(c[1]).add(s[1].children("a")).css("display","block"),l.removeClass(d[9]+" "+d[11])):(i.alwaysShowScrollbar?(2!==i.alwaysShowScrollbar&&c[1].css("display","none"),l.removeClass(d[11])):(s[1].css("display","none"),l.addClass(d[11])),l.addClass(d[9]))),n.overflowed[0]||n.overflowed[1]?o.removeClass(d[5]):o.addClass(d[5])},I=function(e){var t=e.type;switch(t){case"pointerdown":case"MSPointerDown":case"pointermove":case"MSPointerMove":case"pointerup":case"MSPointerUp":return e.target.ownerDocument!==document?[e.originalEvent.screenY,e.originalEvent.screenX,!1]:[e.originalEvent.pageY,e.originalEvent.pageX,!1];case"touchstart":case"touchmove":case"touchend":var o=e.originalEvent.touches[0]||e.originalEvent.changedTouches[0],a=e.originalEvent.touches.length||e.originalEvent.changedTouches.length;return e.target.ownerDocument!==document?[o.screenY,o.screenX,a>1]:[o.pageY,o.pageX,a>1];default:return[e.pageY,e.pageX,!1]}},R=function(){function t(e){var t=m.find("iframe");if(t.length){var o=e?"auto":"none";t.css("pointer-events",o)}}function o(e,t,o,a){if(m[0].idleTimer=u.scrollInertia<233?250:0,n.attr("id")===h[1])var i="x",r=(n[0].offsetLeft-t+a)*d.scrollRatio.x;else var i="y",r=(n[0].offsetTop-e+o)*d.scrollRatio.y;Q(l,r.toString(),{dir:i,drag:!0})}var n,i,r,l=e(this),d=l.data(a),u=d.opt,f=a+"_"+d.idx,h=["mCSB_"+d.idx+"_dragger_vertical","mCSB_"+d.idx+"_dragger_horizontal"],m=e("#mCSB_"+d.idx+"_container"),p=e("#"+h[0]+",#"+h[1]),g=u.advanced.releaseDraggableSelectors?p.add(e(u.advanced.releaseDraggableSelectors)):p;p.bind("mousedown."+f+" touchstart."+f+" pointerdown."+f+" MSPointerDown."+f,function(o){if(o.stopImmediatePropagation(),o.preventDefault(),$(o)){c=!0,s&&(document.onselectstart=function(){return!1}),t(!1),V(l),n=e(this);var a=n.offset(),d=I(o)[0]-a.top,f=I(o)[1]-a.left,h=n.height()+a.top,m=n.width()+a.left;h>d&&d>0&&m>f&&f>0&&(i=d,r=f),y(n,"active",u.autoExpandScrollbar)}}).bind("touchmove."+f,function(e){e.stopImmediatePropagation(),e.preventDefault();var t=n.offset(),a=I(e)[0]-t.top,l=I(e)[1]-t.left;o(i,r,a,l)}),e(document).bind("mousemove."+f+" pointermove."+f+" MSPointerMove."+f,function(e){if(n){var t=n.offset(),a=I(e)[0]-t.top,l=I(e)[1]-t.left;if(i===a)return;o(i,r,a,l)}}).add(g).bind("mouseup."+f+" touchend."+f+" pointerup."+f+" MSPointerUp."+f,function(){n&&(y(n,"active",u.autoExpandScrollbar),n=null),c=!1,s&&(document.onselectstart=null),t(!0)})},E=function(){function o(e){if(!et(e)||c||I(e)[2])return void(t=0);t=1,S=0,b=0;var o=M.offset();d=I(e)[0]-o.top,u=I(e)[1]-o.left,A=[I(e)[0],I(e)[1]]}function n(e){if(et(e)&&!c&&!I(e)[2]&&(e.stopImmediatePropagation(),!b||S)){p=J();var t=k.offset(),o=I(e)[0]-t.top,a=I(e)[1]-t.left,n="mcsLinearOut";if(R.push(o),E.push(a),A[2]=Math.abs(I(e)[0]-A[0]),A[3]=Math.abs(I(e)[1]-A[1]),y.overflowed[0])var i=O[0].parent().height()-O[0].height(),r=d-o>0&&o-d>-(i*y.scrollRatio.y)&&(2*A[3]<A[2]||"yx"===B.axis);if(y.overflowed[1])var l=O[1].parent().width()-O[1].width(),f=u-a>0&&a-u>-(l*y.scrollRatio.x)&&(2*A[2]<A[3]||"yx"===B.axis);r||f?(e.preventDefault(),S=1):b=1,_="yx"===B.axis?[d-o,u-a]:"x"===B.axis?[null,u-a]:[d-o,null],M[0].idleTimer=250,y.overflowed[0]&&s(_[0],D,n,"y","all",!0),y.overflowed[1]&&s(_[1],D,n,"x",W,!0)}}function i(e){if(!et(e)||c||I(e)[2])return void(t=0);t=1,e.stopImmediatePropagation(),V(C),m=J();var o=k.offset();f=I(e)[0]-o.top,h=I(e)[1]-o.left,R=[],E=[]}function r(e){if(et(e)&&!c&&!I(e)[2]){e.stopImmediatePropagation(),S=0,b=0,g=J();var t=k.offset(),o=I(e)[0]-t.top,a=I(e)[1]-t.left;if(!(g-p>30)){x=1e3/(g-m);var n="mcsEaseOut",i=2.5>x,r=i?[R[R.length-2],E[E.length-2]]:[0,0];v=i?[o-r[0],a-r[1]]:[o-f,a-h];var d=[Math.abs(v[0]),Math.abs(v[1])];x=i?[Math.abs(v[0]/4),Math.abs(v[1]/4)]:[x,x];var u=[Math.abs(M[0].offsetTop)-v[0]*l(d[0]/x[0],x[0]),Math.abs(M[0].offsetLeft)-v[1]*l(d[1]/x[1],x[1])];_="yx"===B.axis?[u[0],u[1]]:"x"===B.axis?[null,u[1]]:[u[0],null],w=[4*d[0]+B.scrollInertia,4*d[1]+B.scrollInertia];var C=parseInt(B.contentTouchScroll)||0;_[0]=d[0]>C?_[0]:0,_[1]=d[1]>C?_[1]:0,y.overflowed[0]&&s(_[0],w[0],n,"y",W,!1),y.overflowed[1]&&s(_[1],w[1],n,"x",W,!1)}}}function l(e,t){var o=[1.5*t,2*t,t/1.5,t/2];return e>90?t>4?o[0]:o[3]:e>60?t>3?o[3]:o[2]:e>30?t>8?o[1]:t>6?o[0]:t>4?t:o[2]:t>8?t:o[3]}function s(e,t,o,a,n,i){e&&Q(C,e.toString(),{dur:t,scrollEasing:o,dir:a,overwrite:n,drag:i})}var d,u,f,h,m,p,g,v,x,_,w,S,b,C=e(this),y=C.data(a),B=y.opt,T=a+"_"+y.idx,k=e("#mCSB_"+y.idx),M=e("#mCSB_"+y.idx+"_container"),O=[e("#mCSB_"+y.idx+"_dragger_vertical"),e("#mCSB_"+y.idx+"_dragger_horizontal")],R=[],E=[],D=0,W="yx"===B.axis?"none":"all",A=[],P=M.find("iframe"),z=["touchstart."+T+" pointerdown."+T+" MSPointerDown."+T,"touchmove."+T+" pointermove."+T+" MSPointerMove."+T,"touchend."+T+" pointerup."+T+" MSPointerUp."+T];M.bind(z[0],function(e){o(e)}).bind(z[1],function(e){n(e)}),k.bind(z[0],function(e){i(e)}).bind(z[2],function(e){r(e)}),P.length&&P.each(function(){e(this).load(function(){L(this)&&e(this.contentDocument||this.contentWindow.document).bind(z[0],function(e){o(e),i(e)}).bind(z[1],function(e){n(e)}).bind(z[2],function(e){r(e)})})})},D=function(){function o(){return window.getSelection?window.getSelection().toString():document.selection&&"Control"!=document.selection.type?document.selection.createRange().text:0}function n(e,t,o){d.type=o&&i?"stepped":"stepless",d.scrollAmount=10,F(r,e,t,"mcsLinearOut",o?60:null)}var i,r=e(this),l=r.data(a),s=l.opt,d=l.sequential,u=a+"_"+l.idx,f=e("#mCSB_"+l.idx+"_container"),h=f.parent();f.bind("mousedown."+u,function(){t||i||(i=1,c=!0)}).add(document).bind("mousemove."+u,function(e){if(!t&&i&&o()){var a=f.offset(),r=I(e)[0]-a.top+f[0].offsetTop,c=I(e)[1]-a.left+f[0].offsetLeft;r>0&&r<h.height()&&c>0&&c<h.width()?d.step&&n("off",null,"stepped"):("x"!==s.axis&&l.overflowed[0]&&(0>r?n("on",38):r>h.height()&&n("on",40)),"y"!==s.axis&&l.overflowed[1]&&(0>c?n("on",37):c>h.width()&&n("on",39)))}}).bind("mouseup."+u,function(){t||(i&&(i=0,n("off",null)),c=!1)})},W=function(){function t(t,a){if(V(o),!A(o,t.target)){var r="auto"!==i.mouseWheel.deltaFactor?parseInt(i.mouseWheel.deltaFactor):s&&t.deltaFactor<100?100:t.deltaFactor||100;if("x"===i.axis||"x"===i.mouseWheel.axis)var d="x",u=[Math.round(r*n.scrollRatio.x),parseInt(i.mouseWheel.scrollAmount)],f="auto"!==i.mouseWheel.scrollAmount?u[1]:u[0]>=l.width()?.9*l.width():u[0],h=Math.abs(e("#mCSB_"+n.idx+"_container")[0].offsetLeft),m=c[1][0].offsetLeft,p=c[1].parent().width()-c[1].width(),g=t.deltaX||t.deltaY||a;else var d="y",u=[Math.round(r*n.scrollRatio.y),parseInt(i.mouseWheel.scrollAmount)],f="auto"!==i.mouseWheel.scrollAmount?u[1]:u[0]>=l.height()?.9*l.height():u[0],h=Math.abs(e("#mCSB_"+n.idx+"_container")[0].offsetTop),m=c[0][0].offsetTop,p=c[0].parent().height()-c[0].height(),g=t.deltaY||a;"y"===d&&!n.overflowed[0]||"x"===d&&!n.overflowed[1]||(i.mouseWheel.invert&&(g=-g),i.mouseWheel.normalizeDelta&&(g=0>g?-1:1),(g>0&&0!==m||0>g&&m!==p||i.mouseWheel.preventDefault)&&(t.stopImmediatePropagation(),t.preventDefault()),Q(o,(h-g*f).toString(),{dir:d}))}}var o=e(this),n=o.data(a),i=n.opt,r=a+"_"+n.idx,l=e("#mCSB_"+n.idx),c=[e("#mCSB_"+n.idx+"_dragger_vertical"),e("#mCSB_"+n.idx+"_dragger_horizontal")],d=e("#mCSB_"+n.idx+"_container").find("iframe");n&&(d.length&&d.each(function(){e(this).load(function(){L(this)&&e(this.contentDocument||this.contentWindow.document).bind("mousewheel."+r,function(e,o){t(e,o)})})}),l.bind("mousewheel."+r,function(e,o){t(e,o)}))},L=function(e){var t=null;try{var o=e.contentDocument||e.contentWindow.document;t=o.body.innerHTML}catch(a){}return null!==t},A=function(t,o){var n=o.nodeName.toLowerCase(),i=t.data(a).opt.mouseWheel.disableOver,r=["select","textarea"];return e.inArray(n,i)>-1&&!(e.inArray(n,r)>-1&&!e(o).is(":focus"))},P=function(){var t=e(this),o=t.data(a),n=a+"_"+o.idx,i=e("#mCSB_"+o.idx+"_container"),r=i.parent(),l=e(".mCSB_"+o.idx+"_scrollbar ."+d[12]);l.bind("touchstart."+n+" pointerdown."+n+" MSPointerDown."+n,function(){c=!0}).bind("touchend."+n+" pointerup."+n+" MSPointerUp."+n,function(){c=!1}).bind("click."+n,function(a){if(e(a.target).hasClass(d[12])||e(a.target).hasClass("mCSB_draggerRail")){V(t);var n=e(this),l=n.find(".mCSB_dragger");if(n.parent(".mCSB_scrollTools_horizontal").length>0){if(!o.overflowed[1])return;var s="x",c=a.pageX>l.offset().left?-1:1,u=Math.abs(i[0].offsetLeft)-.9*c*r.width()}else{if(!o.overflowed[0])return;var s="y",c=a.pageY>l.offset().top?-1:1,u=Math.abs(i[0].offsetTop)-.9*c*r.height()}Q(t,u.toString(),{dir:s,scrollEasing:"mcsEaseInOut"})}})},z=function(){var t=e(this),o=t.data(a),n=o.opt,i=a+"_"+o.idx,r=e("#mCSB_"+o.idx+"_container"),l=r.parent();r.bind("focusin."+i,function(){var o=e(document.activeElement),a=r.find(".mCustomScrollBox").length,i=0;o.is(n.advanced.autoScrollOnFocus)&&(V(t),clearTimeout(t[0]._focusTimeout),t[0]._focusTimer=a?(i+17)*a:0,t[0]._focusTimeout=setTimeout(function(){var e=[ot(o)[0],ot(o)[1]],a=[r[0].offsetTop,r[0].offsetLeft],s=[a[0]+e[0]>=0&&a[0]+e[0]<l.height()-o.outerHeight(!1),a[1]+e[1]>=0&&a[0]+e[1]<l.width()-o.outerWidth(!1)],c="yx"!==n.axis||s[0]||s[1]?"all":"none";"x"===n.axis||s[0]||Q(t,e[0].toString(),{dir:"y",scrollEasing:"mcsEaseInOut",overwrite:c,dur:i}),"y"===n.axis||s[1]||Q(t,e[1].toString(),{dir:"x",scrollEasing:"mcsEaseInOut",overwrite:c,dur:i})},t[0]._focusTimer))})},H=function(){var t=e(this),o=t.data(a),n=a+"_"+o.idx,i=e("#mCSB_"+o.idx+"_container").parent();i.bind("scroll."+n,function(){(0!==i.scrollTop()||0!==i.scrollLeft())&&e(".mCSB_"+o.idx+"_scrollbar").css("visibility","hidden")})},U=function(){var t=e(this),o=t.data(a),n=o.opt,i=o.sequential,r=a+"_"+o.idx,l=".mCSB_"+o.idx+"_scrollbar",s=e(l+">a");s.bind("mousedown."+r+" touchstart."+r+" pointerdown."+r+" MSPointerDown."+r+" mouseup."+r+" touchend."+r+" pointerup."+r+" MSPointerUp."+r+" mouseout."+r+" pointerout."+r+" MSPointerOut."+r+" click."+r,function(a){function r(e,o){i.scrollAmount=n.snapAmount||n.scrollButtons.scrollAmount,F(t,e,o)}if(a.preventDefault(),$(a)){var l=e(this).attr("class");switch(i.type=n.scrollButtons.scrollType,a.type){case"mousedown":case"touchstart":case"pointerdown":case"MSPointerDown":if("stepped"===i.type)return;c=!0,o.tweenRunning=!1,r("on",l);break;case"mouseup":case"touchend":case"pointerup":case"MSPointerUp":case"mouseout":case"pointerout":case"MSPointerOut":if("stepped"===i.type)return;c=!1,i.dir&&r("off",l);break;case"click":if("stepped"!==i.type||o.tweenRunning)return;r("on",l)}}})},q=function(){function t(t){function a(e,t){r.type=i.keyboard.scrollType,r.scrollAmount=i.snapAmount||i.keyboard.scrollAmount,"stepped"===r.type&&n.tweenRunning||F(o,e,t)}switch(t.type){case"blur":n.tweenRunning&&r.dir&&a("off",null);break;case"keydown":case"keyup":var l=t.keyCode?t.keyCode:t.which,s="on";if("x"!==i.axis&&(38===l||40===l)||"y"!==i.axis&&(37===l||39===l)){if((38===l||40===l)&&!n.overflowed[0]||(37===l||39===l)&&!n.overflowed[1])return;"keyup"===t.type&&(s="off"),e(document.activeElement).is(u)||(t.preventDefault(),t.stopImmediatePropagation(),a(s,l))}else if(33===l||34===l){if((n.overflowed[0]||n.overflowed[1])&&(t.preventDefault(),t.stopImmediatePropagation()),"keyup"===t.type){V(o);var f=34===l?-1:1;if("x"===i.axis||"yx"===i.axis&&n.overflowed[1]&&!n.overflowed[0])var h="x",m=Math.abs(c[0].offsetLeft)-.9*f*d.width();else var h="y",m=Math.abs(c[0].offsetTop)-.9*f*d.height();Q(o,m.toString(),{dir:h,scrollEasing:"mcsEaseInOut"})}}else if((35===l||36===l)&&!e(document.activeElement).is(u)&&((n.overflowed[0]||n.overflowed[1])&&(t.preventDefault(),t.stopImmediatePropagation()),"keyup"===t.type)){if("x"===i.axis||"yx"===i.axis&&n.overflowed[1]&&!n.overflowed[0])var h="x",m=35===l?Math.abs(d.width()-c.outerWidth(!1)):0;else var h="y",m=35===l?Math.abs(d.height()-c.outerHeight(!1)):0;Q(o,m.toString(),{dir:h,scrollEasing:"mcsEaseInOut"})}}}var o=e(this),n=o.data(a),i=n.opt,r=n.sequential,l=a+"_"+n.idx,s=e("#mCSB_"+n.idx),c=e("#mCSB_"+n.idx+"_container"),d=c.parent(),u="input,textarea,select,datalist,keygen,[contenteditable='true']",f=c.find("iframe"),h=["blur."+l+" keydown."+l+" keyup."+l];f.length&&f.each(function(){e(this).load(function(){L(this)&&e(this.contentDocument||this.contentWindow.document).bind(h[0],function(e){t(e)})})}),s.attr("tabindex","0").bind(h[0],function(e){t(e)})},F=function(t,o,n,i,r){function l(e){var o="stepped"!==f.type,a=r?r:e?o?p/1.5:g:1e3/60,n=e?o?7.5:40:2.5,s=[Math.abs(h[0].offsetTop),Math.abs(h[0].offsetLeft)],d=[c.scrollRatio.y>10?10:c.scrollRatio.y,c.scrollRatio.x>10?10:c.scrollRatio.x],u="x"===f.dir[0]?s[1]+f.dir[1]*d[1]*n:s[0]+f.dir[1]*d[0]*n,m="x"===f.dir[0]?s[1]+f.dir[1]*parseInt(f.scrollAmount):s[0]+f.dir[1]*parseInt(f.scrollAmount),v="auto"!==f.scrollAmount?m:u,x=i?i:e?o?"mcsLinearOut":"mcsEaseInOut":"mcsLinear",_=e?!0:!1;return e&&17>a&&(v="x"===f.dir[0]?s[1]:s[0]),Q(t,v.toString(),{dir:f.dir[0],scrollEasing:x,dur:a,onComplete:_}),e?void(f.dir=!1):(clearTimeout(f.step),void(f.step=setTimeout(function(){l()},a)))}function s(){clearTimeout(f.step),Z(f,"step"),V(t)}var c=t.data(a),u=c.opt,f=c.sequential,h=e("#mCSB_"+c.idx+"_container"),m="stepped"===f.type?!0:!1,p=u.scrollInertia<26?26:u.scrollInertia,g=u.scrollInertia<1?17:u.scrollInertia;switch(o){case"on":if(f.dir=[n===d[16]||n===d[15]||39===n||37===n?"x":"y",n===d[13]||n===d[15]||38===n||37===n?-1:1],V(t),tt(n)&&"stepped"===f.type)return;l(m);break;case"off":s(),(m||c.tweenRunning&&f.dir)&&l(!0)}},Y=function(t){var o=e(this).data(a).opt,n=[];return"function"==typeof t&&(t=t()),t instanceof Array?n=t.length>1?[t[0],t[1]]:"x"===o.axis?[null,t[0]]:[t[0],null]:(n[0]=t.y?t.y:t.x||"x"===o.axis?null:t,n[1]=t.x?t.x:t.y||"y"===o.axis?null:t),"function"==typeof n[0]&&(n[0]=n[0]()),"function"==typeof n[1]&&(n[1]=n[1]()),n},j=function(t,o){if(null!=t&&"undefined"!=typeof t){var n=e(this),i=n.data(a),r=i.opt,l=e("#mCSB_"+i.idx+"_container"),s=l.parent(),c=typeof t;o||(o="x"===r.axis?"x":"y");var d="x"===o?l.outerWidth(!1):l.outerHeight(!1),f="x"===o?l[0].offsetLeft:l[0].offsetTop,h="x"===o?"left":"top";switch(c){case"function":return t();case"object":var m=t.jquery?t:e(t);if(!m.length)return;return"x"===o?ot(m)[1]:ot(m)[0];case"string":case"number":if(tt(t))return Math.abs(t);if(-1!==t.indexOf("%"))return Math.abs(d*parseInt(t)/100);if(-1!==t.indexOf("-="))return Math.abs(f-parseInt(t.split("-=")[1]));if(-1!==t.indexOf("+=")){var p=f+parseInt(t.split("+=")[1]);return p>=0?0:Math.abs(p)}if(-1!==t.indexOf("px")&&tt(t.split("px")[0]))return Math.abs(t.split("px")[0]);if("top"===t||"left"===t)return 0;if("bottom"===t)return Math.abs(s.height()-l.outerHeight(!1));if("right"===t)return Math.abs(s.width()-l.outerWidth(!1));if("first"===t||"last"===t){var m=l.find(":"+t);return"x"===o?ot(m)[1]:ot(m)[0]}return e(t).length?"x"===o?ot(e(t))[1]:ot(e(t))[0]:(l.css(h,t),void u.update.call(null,n[0]))}}},X=function(t){function o(){clearTimeout(h[0].autoUpdate),h[0].autoUpdate=setTimeout(function(){return f.advanced.updateOnSelectorChange&&(m=r(),m!==w)?(l(3),void(w=m)):(f.advanced.updateOnContentResize&&(p=[h.outerHeight(!1),h.outerWidth(!1),v.height(),v.width(),_()[0],_()[1]],(p[0]!==S[0]||p[1]!==S[1]||p[2]!==S[2]||p[3]!==S[3]||p[4]!==S[4]||p[5]!==S[5])&&(l(p[0]!==S[0]||p[1]!==S[1]),S=p)),f.advanced.updateOnImageLoad&&(g=n(),g!==b&&(h.find("img").each(function(){i(this)}),b=g)),void((f.advanced.updateOnSelectorChange||f.advanced.updateOnContentResize||f.advanced.updateOnImageLoad)&&o()))},60)}function n(){var e=0;return f.advanced.updateOnImageLoad&&(e=h.find("img").length),e}function i(t){function o(e,t){return function(){return t.apply(e,arguments)}}function a(){this.onload=null,e(t).addClass(d[2]),l(2)}if(e(t).hasClass(d[2]))return void l();var n=new Image;n.onload=o(n,a),n.src=t.src}function r(){f.advanced.updateOnSelectorChange===!0&&(f.advanced.updateOnSelectorChange="*");var t=0,o=h.find(f.advanced.updateOnSelectorChange);return f.advanced.updateOnSelectorChange&&o.length>0&&o.each(function(){t+=e(this).height()+e(this).width()}),t}function l(e){clearTimeout(h[0].autoUpdate),u.update.call(null,s[0],e)}var s=e(this),c=s.data(a),f=c.opt,h=e("#mCSB_"+c.idx+"_container");if(t)return clearTimeout(h[0].autoUpdate),void Z(h[0],"autoUpdate");var m,p,g,v=h.parent(),x=[e("#mCSB_"+c.idx+"_scrollbar_vertical"),e("#mCSB_"+c.idx+"_scrollbar_horizontal")],_=function(){return[x[0].is(":visible")?x[0].outerHeight(!0):0,x[1].is(":visible")?x[1].outerWidth(!0):0]},w=r(),S=[h.outerHeight(!1),h.outerWidth(!1),v.height(),v.width(),_()[0],_()[1]],b=n();o()},N=function(e,t,o){return Math.round(e/t)*t-o},V=function(t){var o=t.data(a),n=e("#mCSB_"+o.idx+"_container,#mCSB_"+o.idx+"_container_wrapper,#mCSB_"+o.idx+"_dragger_vertical,#mCSB_"+o.idx+"_dragger_horizontal");n.each(function(){K.call(this)})},Q=function(t,o,n){function i(e){return s&&c.callbacks[e]&&"function"==typeof c.callbacks[e]}function r(){return[c.callbacks.alwaysTriggerOffsets||_>=w[0]+b,c.callbacks.alwaysTriggerOffsets||-C>=_]}function l(){var e=[h[0].offsetTop,h[0].offsetLeft],o=[v[0].offsetTop,v[0].offsetLeft],a=[h.outerHeight(!1),h.outerWidth(!1)],i=[f.height(),f.width()];t[0].mcs={content:h,top:e[0],left:e[1],draggerTop:o[0],draggerLeft:o[1],topPct:Math.round(100*Math.abs(e[0])/(Math.abs(a[0])-i[0])),leftPct:Math.round(100*Math.abs(e[1])/(Math.abs(a[1])-i[1])),direction:n.dir}}var s=t.data(a),c=s.opt,d={trigger:"internal",dir:"y",scrollEasing:"mcsEaseOut",drag:!1,dur:c.scrollInertia,overwrite:"all",callbacks:!0,onStart:!0,onUpdate:!0,onComplete:!0},n=e.extend(d,n),u=[n.dur,n.drag?0:n.dur],f=e("#mCSB_"+s.idx),h=e("#mCSB_"+s.idx+"_container"),m=h.parent(),p=c.callbacks.onTotalScrollOffset?Y.call(t,c.callbacks.onTotalScrollOffset):[0,0],g=c.callbacks.onTotalScrollBackOffset?Y.call(t,c.callbacks.onTotalScrollBackOffset):[0,0];
+if(s.trigger=n.trigger,(0!==m.scrollTop()||0!==m.scrollLeft())&&(e(".mCSB_"+s.idx+"_scrollbar").css("visibility","visible"),m.scrollTop(0).scrollLeft(0)),"_resetY"!==o||s.contentReset.y||(i("onOverflowYNone")&&c.callbacks.onOverflowYNone.call(t[0]),s.contentReset.y=1),"_resetX"!==o||s.contentReset.x||(i("onOverflowXNone")&&c.callbacks.onOverflowXNone.call(t[0]),s.contentReset.x=1),"_resetY"!==o&&"_resetX"!==o){switch(!s.contentReset.y&&t[0].mcs||!s.overflowed[0]||(i("onOverflowY")&&c.callbacks.onOverflowY.call(t[0]),s.contentReset.x=null),!s.contentReset.x&&t[0].mcs||!s.overflowed[1]||(i("onOverflowX")&&c.callbacks.onOverflowX.call(t[0]),s.contentReset.x=null),c.snapAmount&&(o=N(o,c.snapAmount,c.snapOffset)),n.dir){case"x":var v=e("#mCSB_"+s.idx+"_dragger_horizontal"),x="left",_=h[0].offsetLeft,w=[f.width()-h.outerWidth(!1),v.parent().width()-v.width()],S=[o,0===o?0:o/s.scrollRatio.x],b=p[1],C=g[1],B=b>0?b/s.scrollRatio.x:0,T=C>0?C/s.scrollRatio.x:0;break;case"y":var v=e("#mCSB_"+s.idx+"_dragger_vertical"),x="top",_=h[0].offsetTop,w=[f.height()-h.outerHeight(!1),v.parent().height()-v.height()],S=[o,0===o?0:o/s.scrollRatio.y],b=p[0],C=g[0],B=b>0?b/s.scrollRatio.y:0,T=C>0?C/s.scrollRatio.y:0}S[1]<0||0===S[0]&&0===S[1]?S=[0,0]:S[1]>=w[1]?S=[w[0],w[1]]:S[0]=-S[0],t[0].mcs||(l(),i("onInit")&&c.callbacks.onInit.call(t[0])),clearTimeout(h[0].onCompleteTimeout),(s.tweenRunning||!(0===_&&S[0]>=0||_===w[0]&&S[0]<=w[0]))&&(G(v[0],x,Math.round(S[1]),u[1],n.scrollEasing),G(h[0],x,Math.round(S[0]),u[0],n.scrollEasing,n.overwrite,{onStart:function(){n.callbacks&&n.onStart&&!s.tweenRunning&&(i("onScrollStart")&&(l(),c.callbacks.onScrollStart.call(t[0])),s.tweenRunning=!0,y(v),s.cbOffsets=r())},onUpdate:function(){n.callbacks&&n.onUpdate&&i("whileScrolling")&&(l(),c.callbacks.whileScrolling.call(t[0]))},onComplete:function(){if(n.callbacks&&n.onComplete){"yx"===c.axis&&clearTimeout(h[0].onCompleteTimeout);var e=h[0].idleTimer||0;h[0].onCompleteTimeout=setTimeout(function(){i("onScroll")&&(l(),c.callbacks.onScroll.call(t[0])),i("onTotalScroll")&&S[1]>=w[1]-B&&s.cbOffsets[0]&&(l(),c.callbacks.onTotalScroll.call(t[0])),i("onTotalScrollBack")&&S[1]<=T&&s.cbOffsets[1]&&(l(),c.callbacks.onTotalScrollBack.call(t[0])),s.tweenRunning=!1,h[0].idleTimer=0,y(v,"hide")},e)}}}))}},G=function(e,t,o,a,n,i,r){function l(){S.stop||(x||m.call(),x=J()-v,s(),x>=S.time&&(S.time=x>S.time?x+f-(x-S.time):x+f-1,S.time<x+1&&(S.time=x+1)),S.time<a?S.id=h(l):g.call())}function s(){a>0?(S.currVal=u(S.time,_,b,a,n),w[t]=Math.round(S.currVal)+"px"):w[t]=o+"px",p.call()}function c(){f=1e3/60,S.time=x+f,h=window.requestAnimationFrame?window.requestAnimationFrame:function(e){return s(),setTimeout(e,.01)},S.id=h(l)}function d(){null!=S.id&&(window.requestAnimationFrame?window.cancelAnimationFrame(S.id):clearTimeout(S.id),S.id=null)}function u(e,t,o,a,n){switch(n){case"linear":case"mcsLinear":return o*e/a+t;case"mcsLinearOut":return e/=a,e--,o*Math.sqrt(1-e*e)+t;case"easeInOutSmooth":return e/=a/2,1>e?o/2*e*e+t:(e--,-o/2*(e*(e-2)-1)+t);case"easeInOutStrong":return e/=a/2,1>e?o/2*Math.pow(2,10*(e-1))+t:(e--,o/2*(-Math.pow(2,-10*e)+2)+t);case"easeInOut":case"mcsEaseInOut":return e/=a/2,1>e?o/2*e*e*e+t:(e-=2,o/2*(e*e*e+2)+t);case"easeOutSmooth":return e/=a,e--,-o*(e*e*e*e-1)+t;case"easeOutStrong":return o*(-Math.pow(2,-10*e/a)+1)+t;case"easeOut":case"mcsEaseOut":default:var i=(e/=a)*e,r=i*e;return t+o*(.499999999999997*r*i+-2.5*i*i+5.5*r+-6.5*i+4*e)}}e._mTween||(e._mTween={top:{},left:{}});var f,h,r=r||{},m=r.onStart||function(){},p=r.onUpdate||function(){},g=r.onComplete||function(){},v=J(),x=0,_=e.offsetTop,w=e.style,S=e._mTween[t];"left"===t&&(_=e.offsetLeft);var b=o-_;S.stop=0,"none"!==i&&d(),c()},J=function(){return window.performance&&window.performance.now?window.performance.now():window.performance&&window.performance.webkitNow?window.performance.webkitNow():Date.now?Date.now():(new Date).getTime()},K=function(){var e=this;e._mTween||(e._mTween={top:{},left:{}});for(var t=["top","left"],o=0;o<t.length;o++){var a=t[o];e._mTween[a].id&&(window.requestAnimationFrame?window.cancelAnimationFrame(e._mTween[a].id):clearTimeout(e._mTween[a].id),e._mTween[a].id=null,e._mTween[a].stop=1)}},Z=function(e,t){try{delete e[t]}catch(o){e[t]=null}},$=function(e){return!(e.which&&1!==e.which)},et=function(e){var t=e.originalEvent.pointerType;return!(t&&"touch"!==t&&2!==t)},tt=function(e){return!isNaN(parseFloat(e))&&isFinite(e)},ot=function(e){var t=e.parents(".mCSB_container");return[e.offset().top-t.offset().top,e.offset().left-t.offset().left]};e.fn[o]=function(t){return u[t]?u[t].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof t&&t?void e.error("Method "+t+" does not exist"):u.init.apply(this,arguments)},e[o]=function(t){return u[t]?u[t].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof t&&t?void e.error("Method "+t+" does not exist"):u.init.apply(this,arguments)},e[o].defaults=i,window[o]=!0,e(window).load(function(){e(n)[o](),e.extend(e.expr[":"],{mcsInView:e.expr[":"].mcsInView||function(t){var o,a,n=e(t),i=n.parents(".mCSB_container");if(i.length)return o=i.parent(),a=[i[0].offsetTop,i[0].offsetLeft],a[0]+ot(n)[0]>=0&&a[0]+ot(n)[0]<o.height()-n.outerHeight(!1)&&a[1]+ot(n)[1]>=0&&a[1]+ot(n)[1]<o.width()-n.outerWidth(!1)},mcsOverflow:e.expr[":"].mcsOverflow||function(t){var o=e(t).data(a);if(o)return o.overflowed[0]||o.overflowed[1]}})})})});
+
+var end_mscroll = "";</script><style>
+#projector_form .slide_pr .bx-wrapper .bx-viewport {
+    overflow: hidden !important;
+}
+</style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NRVMKQ4');</script>
+<!-- End Google Tag Manager --><script type="text/javascript">
+(function(){ var x = document.createElement('script');
+x.src = "//api.conversion.pl/scripts/82ca1899e5f044f8887bb16bab70408f.js"; document.getElementsByTagName('head')[0].appendChild(x); }());
+</script><style>
+.productslist_product_version{
+display:none !important;
+}
+
+.order2_size_desc{
+display:none !important;
+}
+
+td.order_product_info ul{
+display:none !important;
+}
+</style><script type="text/javascript">app_shop.run(function(){
+
+$(".product_section.versions > label").text("KOLEKCJA");
+
+},'all','.product_section.versions');
+</script><style>
+
+@media only screen and (max-width: 757px){
+
+
+.size-changer {
+  display: inline-block !important;
+}
+
+#projector_prices_wrapper{
+margin-top:20px;
+}
+
+a.show_size_cms {
+  display: inline-block !important;
+}
+
+#projector_form div.photos .bx-wrapper .bx-controls-direction a{
+height:24px;
+}
+
+#projector_price_value_wrapper .projector_label {
+  display: table-cell;
+  font-size: 0.85em;
+  text-align: right;
+  width: auto !important;
+}
+
+#projector_price_value_wrapper > div {
+  display: table-cell;
+  padding-left: 6px;
+float:none !important;
+}
+}
+</style><script type="text/javascript">var currency_decimal_separator = ',';
+var currency_grouping_separator = ' ';
+
+
+app_shop.run(function(){
+
+  centerImage('.product-icon img', $(".product-icon").height() , '#ffffff');
+
+},[2,3,4],'.main_page .product-icon img');</script><style>
+
+#search .comingsoon{z-index:1;}
+
+img{
+height:auto;
+}
+
+.basketedit_page .srp_old_price{
+text-decoration:line-through;
+}
+
+#osc_order1 .comment{
+display:block;
+margin-top:10px;
+}
+
+.menu_more_bottom_item > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.margin_topminus{
+margin-top:-25px;
+}
+
+#ordercop_shipping_cost{
+display:none;
+}
+
+#order2_shipping_value strong{
+float:right;
+}
+
+
+@media only screen and (max-width: 757px){
+
+#projector_shipping_info a {
+    display: none;
+    line-height: 20px;
+    min-height: 20px;
+    clear: both;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.margin_topminus{
+margin-top:auto;
+}
+
+.n57234{
+display:none;
+}
+
+.newsletter_title span {
+    display: block;
+    font-size: 0.7em;
+    letter-spacing: -0.1px;
+    margin-bottom: 5px;
+    vertical-align: top;
+    white-space: pre-wrap;
+}
+
+/*header #menu_top .logo-div a, #menu_top h2 a {
+    border-bottom: 1px dotted #000000;
+    display: block;
+    height: 90px !important;
+    left: 50%;
+    margin-top: 15px;
+    position: relative;
+    transform: translateX(-50%);
+    width: 76% !important;
+    z-index: 100;
+
+}*/
+
+</style><script type="text/javascript">app_shop.run(function(){
+
+//$("#menu_top h2 a").css({"height":"90px !important", "width":"279px"})
+$("#menu_top h2 a").attr("style", "height:90px !important; width:76% !important;");
+
+},[1]);</script><script type="text/javascript">app_shop.run(function(){
+
+if($(".n57234").length == 0){
+$("header").append("<div class='n57234'></div>");
+$(".n57234").load("/basketedit.php .n57234 > *");
+}
+
+},'all','#cop_seection1');
+
+</script><script type="text/javascript">app_shop.run(function(){
+
+  $(window).off();
+
+},[2,3,4],'.basketedit_page')
+
+app_shop.run(function(){
+
+  $(window).off();
+
+},[2,3,4],'#cop_seection1');</script><script type="text/javascript">(function(srcjs, $) {
+    window._edrone = window._edrone || {};
+    _edrone.app_id = '591c4fbccadb6';
+    _edrone.version = '1.1.6';
+    _edrone.email = '';
+    _edrone.first_name = '';
+    _edrone.last_name = '';
+    _edrone.country = '';
+    _edrone.city = '';
+    _edrone.phone = '';
+    _edrone.platform = 'iai';
+    _edrone.action_type = 'other';
+    _edrone._old_init = _edrone.init
+
+    //CUSTOMER TAGS
+    window._edrone_iai = window._edrone_iai || {};
+    window._edrone_iai.customer_tags = '';
+    window._edrone_iai.tags = [];
+    if (window._edrone_iai.customer_tags !== '') {
+        for (var k in JSON.parse(window._edrone_iai.customer_tags))
+            window._edrone_iai.tags.push(k);
+        _edrone.customer_tags = window._edrone_iai.tags.join('|');
+    }
+
+    $(function() {
+        //NEWSLETTER
+        $('body').on('submit', "form[action='settings.php']", function() {
+            var email = $(this).find("[name='mailing_email']").val();
+            _edrone.customer_tags = 'From PopUp';
+            _edrone.email = email;
+            _edrone.subscriber_status = '1';
+            _edrone.action_type = 'subscribe';
+            _edrone.init();
+        });
+        
+        $('body').on('submit', '#client_new_form', function() {
+            var self = $(this);
+            _edrone.email = self.find("[name='client_email']").val();
+            if (self.find('#client_mailing').is(':checked')) {
+                _edrone.customer_tags = 'From PopUp';
+                _edrone.subscriber_status = '1';
+                _edrone.action_type = 'subscribe';
+            }
+            _edrone.init();
+        });
+        
+        $.ajax({
+            url: 'ajax/basket.php',
+            dataType: "json",
+            success: function(data) {
+                if (data.basket.products.length != 0) {
+                    localStorage.setItem('iai_basket', JSON.stringify(data));
+                }
+            }
+        });
+    });
+
+    var doc = document.createElement('script');
+    doc.type = 'text/javascript';
+    doc.async = true;
+    doc.src = ('https:' == document.location.protocol
+        ? 'https:'
+        : 'http:') + srcjs;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(doc, s);
+})("//d3bo67muzbfgtl.cloudfront.net/edrone_2_0.js", window.jQuery);</script>
+
+<!-- End additional html or js -->
+<script type="text/javascript" src="/gfx/pol/projector_product_questions.js.gzip?r=1536225480"></script><script type="text/javascript" src="/gfx/pol/projector_video.js.gzip?r=1536225480"></script></head><body>
+<!-- Begin additional html or js -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRVMKQ4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- End additional html or js -->
+<div id="fb-root"></div><div id="container" class="projector_page container language_pol domena_pl"><header class="clearfix"><script type="text/javascript">
+
+app_shop.vars.currency_format = "###,##0.00";
+app_shop.vars.currency_before_value = false;
+app_shop.vars.currency_space = true;
+app_shop.vars.symbol = "zł";
+
+
+app_shop.vars.blacklist_extension = ["exe","com","swf","js","php"];
+
+app_shop.vars.blacklist_mime = ["application/javascript","application/octet-stream","message/http","text/javascript","application/x-deb","application/x-javascript","application/x-shockwave-flash","application/x-msdownload"];
+</script><div id="viewType" style="display:none"></div><div id="menu_buttons3"><div class="menu_button_wrapper"><div class="topbar_sub"><span class="tiny">Witamy!</span></div>
+<div class="topbar_sub"><a href="https://sneakerstudio.pl/Wysylka-clinks-pol-31.html" title=""><i class="icon-truck"></i>Darmowa Dostawa</a></div>
+<div class="topbar_sub"><i class="icon-refresh"></i>30 Dni na zwrot</div></div></div><div class="menu_settings_wrapper"><div id="topbar"></div><div class="top_flags"><span class="jezyk">Język</span><span class="top_flag lang_ukr" href="http://sneakerstudio.com.ua/"></span><span class="top_flag lang_ger" href="http://sneakerstudio.de/"></span><span class="top_flag lang_pol active" href="http://sneakerstudio.pl/"></span><span class="top_flag lang_fra" href="http://sneakerstudio.fr/"></span><span class="top_flag lang_rus" href="http://sneakerstudio.ru/"></span><span class="top_flag lang_eng_ameryka" href="http://sneakerstudio.com/"></span><span class="top_flag lang_cze" href="http://sneakerstudio.cz/"></span><span class="top_flag lang_hun" href="http://sneakerstudio.hu/"></span><span class="top_flag lang_rum" href="http://sneakerstudio.ro/"></span><span class="top_flag lang_ita" href="http://sneakerstudio.it/"></span><div class="top_lang_toggle"><a class="top_flag lang_ukr" title="Yкраїнський" href="http://sneakerstudio.com.ua/"><span class="lan_name">Украина</span></a><a class="top_flag lang_ger" title="Deutsch" href="http://sneakerstudio.de/"><span class="lan_name">Deutsch</span></a><a class="top_flag lang_pol active" title="Polski" href="http://sneakerstudio.pl/"><span class="lan_name">Polski </span></a><a class="top_flag lang_fra" title="Francais" href="http://sneakerstudio.fr/"><span class="lan_name">Francais</span></a><a class="top_flag lang_rus" title="Pусский" href="http://sneakerstudio.ru/"><span class="lan_name">Русский</span></a><a class="top_flag lang_eng_ameryka" title="United States" href="http://sneakerstudio.com/"><span class="lan_name">English</span></a><a class="top_flag lang_cze" title="Česká republika" href="http://sneakerstudio.cz/"><span class="lan_name">Čeština</span></a><a class="top_flag lang_hun" title="Magyarország" href="http://sneakerstudio.hu/"><span class="lan_name">Magyar</span></a><a class="top_flag lang_rum" title="Română" href="http://sneakerstudio.ro/"><span class="lan_name">Română</span></a><a class="top_flag lang_ita" title="Română" href="http://sneakerstudio.it/"><span class="lan_name">Italiano</span></a></div></div><div class="top_money"><span class="name">PLN</span><div class="top_coin_toggle"><a class="top_coin active" title="" href="/settings.php?curr=PLN"><span class="currency currency_PLN"></span>PLN</a><a class="top_coin" title="" href="/settings.php?curr=GBP"><span class="currency currency_GBP"></span>GBP</a><a class="top_coin" title="" href="/settings.php?curr=EUR"><span class="currency currency_EUR"></span>EUR</a></div></div><div id="topbar_facebook"></div><div class="menu_settings_bar"><span class="menu_settings_toggle">Zmień</span><span class="menu_settings_bar"><span class="menu_settings_barlab">waluta: </span><span class="menu_settings_barval">zł</span></span><span class="menu_settings_bar" id="menu_settings_bar_first"><span class="menu_settings_barlab">kraj dostawy: </span><span class="menu_settings_barval">Polska</span></span></div><div class="menu_settings_panel"><form action="settings.php" method="post"><table class="menu_settings_panel"><tr><td class="menu_settings_country"><fieldset class="menu_settings_panel"><legend class="menu_settings_panel">Kraj odbioru zamówienia </legend><select class="menu_settings_country" name="country"><option value="1143020001">Albania</option><option value="1143020016">Austria</option><option value="1143020022">Belgia</option><option value="1143020031">Brazylia</option><option value="1143020033">Bułgaria</option><option value="1143020037">Chiny</option><option value="1143020038">Chorwacja</option><option value="1143020041">Czechy</option><option value="1143020042">Dania</option><option value="1143020051">Estonia</option><option value="1143020056">Finlandia</option><option value="1143020057">Francja</option><option value="1143020062">Grecja</option><option value="1143020075">Hiszpania</option><option value="1143020076">Holandia</option><option value="1143020083">Irlandia</option><option value="1143020087">Japonia</option><option value="1143020116">Litwa</option><option value="1143020118">Łotwa</option><option value="1143020117">Luksemburg</option><option value="1143020135">Monako</option><option value="1143020143">Niemcy</option><option selected value="1143020003">Polska</option><option value="1143020163">Portugalia</option><option value="1143020169">Rumunia</option><option value="1143020182">Słowacja</option><option value="1143020183">Słowenia</option><option value="1143020186">Stany Zjednoczone</option><option value="1143020192">Szwajcaria</option><option value="1143020193">Szwecja</option><option value="1143020218">Wielka Brytania</option><option value="1143020220">Włochy</option></select></fieldset></td><td class="menu_settings_currency"><fieldset class="menu_settings_panel"><legend class="menu_settings_panel">Ceny podane w: </legend><div class="menu_settings_item"><input type="radio" class="menu_settings_radio" name="curr" checked value="PLN" id="radio_currency_PLN"><label class="menu_settings_radio" for="radio_currency_PLN">zł<span class="menu_settings_currencyrate">(1 zł = zł)</span></label></div><div class="menu_settings_item"><input type="radio" class="menu_settings_radio" name="curr" value="GBP" id="radio_currency_GBP"><label class="menu_settings_radio" for="radio_currency_GBP">£<span class="menu_settings_currencyrate">(1 zł = 0.2128£)</span></label></div><div class="menu_settings_item"><input type="radio" class="menu_settings_radio" name="curr" value="EUR" id="radio_currency_EUR"><label class="menu_settings_radio" for="radio_currency_EUR">€<span class="menu_settings_currencyrate">(1 zł = 0.25€)</span></label></div></fieldset></td></tr></table><div class="menu_settings_submit"><button class="btn-small menu_settings_submit" type="submit">
+                    Zastosuj zmiany
+                </button></div></form></div></div><div id="menu_top" style="background: url('/data/gfx/mask/pol/top_1_big.png') top center no-repeat;height:1px;"><div class="logo-div"><a title="SneakerStudio" href="/" target="_self" style="width:279px;height:120px"><img src="/data/gfx/mask/pol/logo_1_big.png" alt="SneakerStudio"></a></div></div><div id="menu_basket" class="hidden-phone"><a class="to_acc to_accsearch" href="/searching.php"><span class="hidden-desktop"><i class="icon-search icon-large"></i>Szukaj </span></a><a class="to_acc to_accacunt" href="/login.php"><i class="icon-user icon-large"></i>Zaloguj
+                    </a><a class="favorite_products" href="/basketedit.php?mode=2" rel="nofollow" title=""><i class="icon-star"></i><span>Schowek</span><span class="acc_number">(0)</span></a><a class="to_acc to_accclub" href="/client-new.php?register"><i class="acc_club_gfx"></i><span class="club">Sneaker<b>Club</b></span></a><div id="menu_basket_info"><a class="to_basket" href="/basketedit.php?mode=1"><i class="icon-shopping-cart icon-large"></i></a><a href="/basketedit.php?mode=1" class="to_basket_2"><i></i><strong class="count">0</strong><span class="currency"> szt. za </span><strong class="cost">0,00 zł</strong><span class="acc_txt">Koszyk</span></a></div><a class="btn-small to_card empty_bsket" href="/basketedit.php?mode=1" rel="nofollow" title="Twój koszyk jest pusty, najpierw dodaj do niego towary z naszej oferty.">
+                    Koszyk
+                </a></div><form action="search.php" method="get" id="menu_search"><input id="menu_search_text" type="text" name="text" placeholder="Szukaj"><button type="submit"><i class="icon-search"></i></button></form><div id="menu_categories" class="clearfix"><ul class="level_1"><li class="level_1 mobile_menu1 mobile_menu"><a href="/categories.php" class="mobile_menu"><i class="icon-reorder"></i></a></li><li class="level_1 mobile_menu2 mobile_menu"><a href="/login.php" class="mobile_menu"><i class="icon-user"></i></a></li><li class="level_1 mobile_menu2a mobile_menu"><a href="/basketedit.php?mode=2" class="mobile_menu"><i class="icon-star"></i></a></li><li class="level_1 mobile_menu3 mobile_menu"><a href="/searching.php%20" class="mobile_menu"><i class="icon-search"></i></a></li><li class="level_1 mobile_menu3i5 mobile_menu"><a href="/basketedit.php?mode=1" class="mobile_menu"><i class="icon-search"></i></a></li><li class="level_1 mobile_menu4 mobile_menu"><a href="#basket" class="mobile_menu"><i class="icon-shopping-cart"></i></a></li><li class="level_1 hidden-phone" id="level_1_position_1"><a href="/pol_m_DAMSKIE-209.html" class="level_1 toggle" target="_self">DAMSKIE</a><ul class="level_2 bigger"><div class="level_2"><div class="twocols"><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE-209.html" class="level_2 level_2_no_link" target="_self">BUTY DAMSKIE</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_ADIDAS-631.html" class="level_2 level_2_no_link" target="_self">adidas</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_Alpha-Industries-741.html" class="level_2 level_2_no_link" target="_self">Alpha Industries</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_ASICS-651.html" class="level_2 level_2_no_link" target="_self">Asics Tiger</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_BIRKENSTOCK-1661.html" class="level_2 level_2_no_link" target="_self">Birkenstock</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_CASIO_CASIO-1470.html" class="level_2 level_2_no_link" target="_self">Casio Retro</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_CONVERSE-630.html" class="level_2 level_2_no_link" target="_self">Converse</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_Fila-1456.html" class="level_2 level_2_no_link" target="_self">Fila</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_CASIO_G-SHOCK-1472.html" class="level_2 level_2_no_link" target="_self">G-Shock</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_JORDAN-682.html" class="level_2 level_2_no_link" target="_self">Jordan</a></li><li class="level_2_1kol"><a href="http://sneakerstudio.pl/pol_m_DAMSKIE_Marki_MOON-BOOT-1972.html" class="level_2 level_2_no_link" target="_self">Moon Boot</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_NEW-BALANCE-645.html" class="level_2 level_2_no_link" target="_self">New Balance</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_NIKE-654.html" class="level_2 level_2_no_link" target="_self">Nike</a></li><li class="level_2_1kol"><a href="http://sneakerstudio.pl/pol_m_DAMSKIE_Marki_PALLADIUM-1957.html" class="level_2 level_2_no_link" target="_self">Palladium</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_PUMA-641.html" class="level_2 level_2_no_link" target="_self">Puma</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_REEBOK-634.html" class="level_2 level_2_no_link" target="_self">Reebok</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_TIMBERLAND-674.html" class="level_2 level_2_no_link" target="_self">Timberland</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_VANS-659.html" class="level_2 level_2_no_link" target="_self">Vans</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_DAMSKIE_Marki_SAUCONY-644.html" class="level_2 level_2_no_link" target="_self">Saucony</a></li><li class="level_2_1kol"><a href="http://yeezy.sneakerstudio.com/" class="level_2 level_2_no_link" target="_self">YEEZY</a></li></div><div class="twocols"><li class="level_2_1kol"><a href="/pol_m_DAMSKIE_ODZIEZ-1525.html" class="level_2 toggle nexttolabel" target="_self">ODZIEŻ</a><ul class="level_3"><li class="level_3"><a href="/pol_m_DAMSKIE_ODZIEZ_Koszulki-damskie-1526.html" class="level_3" target="_self">Koszulki damskie</a></li><li class="level_3"><a href="/pol_m_DAMSKIE_ODZIEZ_Kurtki-przejsciowe-damskie-1527.html" class="level_3" target="_self">Kurtki przejściowe damskie</a></li><li class="level_3"><a href="/pol_m_DAMSKIE_ODZIEZ_Bluzy-damskie-1528.html" class="level_3" target="_self">Bluzy damskie</a></li><li class="level_3"><a href="/pol_m_DAMSKIE_ODZIEZ_Sukienki-1529.html" class="level_3" target="_self">Sukienki</a></li><li class="level_3"><a href="/pol_m_DAMSKIE_ODZIEZ_Szorty-damskie-1530.html" class="level_3" target="_self">Szorty damskie</a></li><li class="level_3"><a href="/pol_m_DAMSKIE_ODZIEZ_Spodnie-damskie-1531.html" class="level_3" target="_self">Spodnie damskie</a></li><li class="level_3"><a href="/pol_m_DAMSKIE_ODZIEZ_Kurtki-Zimowe-Damskie-1916.html" class="level_3" target="_self">Kurtki Zimowe Damskie</a></li></ul></li></div></div><div class="clearfix"></div><div class="menu_more"><ul class="menu_more_bottom"></ul></div></ul></li><li class="level_1 hidden-phone" id="level_1_position_2"><a href="/pol_m_MESKIE-187.html" class="level_1 toggle" target="_self">MĘSKIE</a><ul class="level_2 bigger"><div class="level_2"><div class="twocols"><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE-187.html" class="level_2 level_2_no_link" target="_self">BUTY MĘSKIE</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_adidas-649.html" class="level_2 level_2_no_link" target="_self">adidas</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_Alpha-Industries-744.html" class="level_2 level_2_no_link" target="_self">Alpha Industries</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_ASICS-637.html" class="level_2 level_2_no_link" target="_self">Asics Tiger</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_BIRKENSTOCK-1658.html" class="level_2 level_2_no_link" target="_self">Birkenstock</a></li><li class="level_2_1kol"><a href="http://sneakerstudio.pl/pol_m_MESKIE_Marki_CASIO_Casio-1474.html" class="level_2 level_2_no_link" target="_self">Casio Retro</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_REEBOK-632.html" class="level_2 level_2_no_link" target="_self">Reebok</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_CONVERSE-635.html" class="level_2 level_2_no_link" target="_self">Converse</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_Fila-1453.html" class="level_2 level_2_no_link" target="_self">Fila</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_CASIO_G-Shock-1475.html" class="level_2 level_2_no_link" target="_self">G-Shock</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_JORDAN-679.html" class="level_2 level_2_no_link" target="_self">Jordan</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_NEW-BALANCE-638.html" class="level_2 level_2_no_link" target="_self">New Balance</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_NIKE-648.html" class="level_2 level_2_no_link" target="_self">Nike</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_ONITSUKA-TIGER-660.html" class="level_2 level_2_no_link" target="_self">Onitsuka Tiger</a></li><li class="level_2_1kol"><a href="http://sneakerstudio.pl/pol_m_MESKIE_Marki_PALLADIUM-746.html" class="level_2 level_2_no_link" target="_self">Palladium</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_PUMA-639.html" class="level_2 level_2_no_link" target="_self">Puma</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_SAUCONY-643.html" class="level_2 level_2_no_link" target="_self">Saucony</a></li><li class="level_2_1kol"><a href="http://sneakerstudio.pl/pol_m_MESKIE_Marki_THE-NORTH-FACE-1890.html" class="level_2 level_2_no_link" target="_self">The North Face</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_TIMBERLAND-678.html" class="level_2 level_2_no_link" target="_self">Timberland</a></li><li class="level_2_1kol"><a href="https://sneakerstudio.pl/pol_m_MESKIE_Marki_VANS-664.html" class="level_2 level_2_no_link" target="_self">Vans</a></li><li class="level_2_1kol"><a href="http://yeezy.sneakerstudio.com/" class="level_2 level_2_no_link" target="_self">YEEZY</a></li></div><div class="twocols"><li class="level_2_1kol"><a href="/pol_m_MESKIE_ODZIEZ-1517.html" class="level_2 toggle nexttolabel" target="_self">ODZIEŻ</a><ul class="level_3"><li class="level_3"><a href="/pol_m_MESKIE_ODZIEZ_Koszulki-meskie-1518.html" class="level_3" target="_self">Koszulki męskie</a></li><li class="level_3"><a href="/pol_m_MESKIE_ODZIEZ_Bluzy-meskie-1521.html" class="level_3" target="_self">Bluzy męskie</a></li><li class="level_3"><a href="/pol_m_MESKIE_ODZIEZ_Szorty-meskie-1522.html" class="level_3" target="_self">Szorty męskie</a></li><li class="level_3"><a href="/pol_m_MESKIE_ODZIEZ_Spodnie-meskie-1523.html" class="level_3" target="_self">Spodnie męskie</a></li><li class="level_3"><a href="/pol_m_MESKIE_ODZIEZ_Kurtki-przejsciowe-meskie-1524.html" class="level_3" target="_self">Kurtki przejściowe męskie</a></li><li class="level_3"><a href="/pol_m_MESKIE_ODZIEZ_Kurtki-zimowe-meskie-1915.html" class="level_3" target="_self">Kurtki zimowe męskie</a></li></ul></li></div></div><div class="clearfix"></div><div class="menu_more"><ul class="menu_more_bottom"></ul></div></ul></li><li class="level_1 hidden-phone" id="level_1_position_3"><a href="/pol_m_JUNIORSKIE-183.html" class="level_1 toggle" target="_self">JUNIORSKIE</a><ul class="level_2"><div class="level_2"><li class="level_2"><a href="https://sneakerstudio.pl/pol_m_JUNIORSKIE-183.html" class="level_2 level_2_no_link" target="_self">BUTY JUNIORSKIE</a></li><li class="level_2"><a href="https://sneakerstudio.pl/pol_m_JUNIORSKIE_Marki_ADIDAS-650.html" class="level_2 level_2_no_link" target="_self">adidas</a></li><li class="level_2"><a href="/pol_m_JUNIORSKIE_Converse-349.html" class="level_2 level_2_no_link" target="_self">Converse</a></li><li class="level_2"><a href="/pol_m_JUNIORSKIE_New-Balance-490.html" class="level_2 level_2_no_link" target="_self">New Balance</a></li><li class="level_2"><a href="https://sneakerstudio.pl/pol_m_JUNIORSKIE_Marki_PUMA-662.html" class="level_2 level_2_no_link" target="_self">Puma</a></li><li class="level_2"><a href="https://sneakerstudio.pl/pol_m_JUNIORSKIE_Marki_REEBOK-727.html" class="level_2 level_2_no_link" target="_self">Reebok</a></li><li class="level_2"><a href="https://sneakerstudio.pl/pol_m_JUNIORSKIE_Marki_VANS-663.html" class="level_2 level_2_no_link" target="_self">Vans</a></li></div><div class="clearfix"></div><div class="menu_more"><ul class="menu_more_bottom"><li class="menu_more_bottom_item"><a href="/pol_m_JUNIORSKIE_-Wszystkie-488.html">Wszystkie</a></li></ul></div></ul></li><li class="level_1 hidden-phone menu-prods" id="level_1_position_4"><a href="/pol_m_MARKI-148.html" class="level_1 toggle" target="_self">MARKI</a><ul class="level_2 menu_prods_sub"><div class="level_2"><li class="level_2"><a href="https://sneakerstudio.pl/pol_m_MARKI-148.html" class="level_2 toggle nexttolabel" target="_self">MARKI</a><ul class="level_3"><li class="level_3"><a href="##" class="level_3">A</a><ul class="level_4"><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_adidas_ADIDAS-ORIGINALS-636.html" class="level_4" target="_self">adidas Originals</a></li><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_adidas-Performance-1203.html" class="level_4" target="_self">adidas Performance</a></li><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Alpha-Industries-743.html" class="level_4" target="_self">Alpha Industries</a></li><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Asics-Tiger-165.html" class="level_4" target="_self">Asics Tiger</a></li></ul></li><li class="level_3"><a href="##" class="level_3">B</a><ul class="level_4"><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_BIRKENSTOCK-1657.html" class="level_4" target="_self">Birkenstock</a></li></ul></li><li class="level_3"><a href="##" class="level_3">C</a><ul class="level_4"><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Casio-Retro-1459.html" class="level_4" target="_self">Casio</a></li><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_CHAMPION-1940.html" class="level_4" target="_self">Champion</a></li><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Converse-151.html" class="level_4" target="_self">Converse</a></li><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_AKCESORIA_Kosmetyki-do-obuwia-447.html" class="level_4" target="_self">Crep</a></li></ul></li><li class="level_3"><a href="##" class="level_3">E</a><ul class="level_4"><li class="level_4"><a href="http://sneakerstudio.pl/pol_m_MARKI_EASTPAK-1891.html" class="level_4" target="_self">Eastpak</a></li></ul></li><li class="level_3"><a href="##" class="level_3">F</a><ul class="level_4"><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Fila-1457.html" class="level_4" target="_self">Fila</a></li></ul></li><li class="level_3"><a href="##" class="level_3">G</a><ul class="level_4"><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_G-Shock-1460.html" class="level_4" target="_self">G-Shock</a></li></ul></li><li class="level_3"><a href="##" class="level_3">H</a><ul class="level_4"><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Happy-Socks-1515.html" class="level_4" target="_self">Happy Socks</a></li><li class="level_4"><a href="http://sneakerstudio.pl/pol_m_MARKI_HERSCHEL-1917.html" class="level_4" target="_self">Herschel</a></li></ul></li><li class="level_3"><a href="##" class="level_3">J</a><ul class="level_4"><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Jordan-336.html" class="level_4" target="_self">Jordan</a></li></ul></li><li class="level_3"><a href="##" class="level_3">L</a><ul class="level_4"><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Levis-R-1618.html" class="level_4" target="_self">Levi's®</a></li></ul></li><li class="level_3"><a href="##" class="level_3">M</a><ul class="level_4"><li class="level_4"><a href="http://sneakerstudio.pl/pol_m_MARKI_MOON-BOOT-1973.html" class="level_4" target="_self">Moon Boot</a></li></ul></li><li class="level_3"><a href="##" class="level_3">N</a><ul class="level_4"><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_New-Balance-1442.html" class="level_4" target="_self">New Balance</a></li><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Nike-157.html" class="level_4" target="_self">Nike</a></li></ul></li><li class="level_3"><a href="##" class="level_3">O</a><ul class="level_4"><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Onitsuka-Tiger-627.html" class="level_4" target="_self">Onitsuka Tiger</a></li></ul></li><li class="level_3"><a href="##" class="level_3">P</a><ul class="level_4"><li class="level_4"><a href="http://sneakerstudio.pl/pol_m_MARKI_PALLADIUM-1953.html" class="level_4" target="_self">Palladium</a></li><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Puma-164.html" class="level_4" target="_self">Puma</a></li><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Puma-x-Fenty-1619.html" class="level_4" target="_self">Puma x Fenty</a></li><li class="level_4"><a href="http://sneakerstudio.pl/pol_m_MARKI_PINQPONQ-1929.html" class="level_4" target="_self">PinqPonq</a></li></ul></li><li class="level_3"><a href="##" class="level_3">R</a><ul class="level_4"><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Reebok-Classic-1443.html" class="level_4" target="_self">Reebok Classic</a></li></ul></li><li class="level_3"><a href="##" class="level_3">S</a><ul class="level_4"><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Saucony-443.html" class="level_4" target="_self">Saucony</a></li><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Stance-685.html" class="level_4" target="_self">Stance</a></li></ul></li><li class="level_3"><a href="##" class="level_3">T</a><ul class="level_4"><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_THE-NORTH-FACE-1889.html" class="level_4" target="_self">The North Face</a></li><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Timberland-361.html" class="level_4" target="_self">Timberland</a></li></ul></li><li class="level_3"><a href="##" class="level_3">V</a><ul class="level_4"><li class="level_4"><a href="https://sneakerstudio.pl/pol_m_MARKI_Vans-450.html" class="level_4" target="_self">Vans</a></li></ul></li><li class="level_3"><a href="##" class="level_3">Y</a><ul class="level_4"><li class="level_4"><a href="http://yeezy.sneakerstudio.com/" class="level_4" target="_self">YEEZY</a></li></ul></li></ul></li><li class="level_2"><a href="/pol_m_MARKI_Most-Wanted-1418.html" class="level_2 toggle nexttolabel" target="_self">Most Wanted</a><ul class="level_3"><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_adidas-zx-flux-1420.html" class="level_3" target="_self">adidas zx flux</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_adidas-superstar-1421.html" class="level_3" target="_self">adidas superstar</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_nike-air-force-1422.html" class="level_3" target="_self">nike air force</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_adidas-nmd-1423.html" class="level_3" target="_self">adidas nmd</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_reebok-classic-leather-1479.html" class="level_3" target="_self">reebok classic leather</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_puma-suede-1480.html" class="level_3" target="_self">puma suede</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_adidas-gazelle-1481.html" class="level_3" target="_self">adidas gazelle</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_nike-air-max-1482.html" class="level_3" target="_self">nike air max</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_puma-basket-1483.html" class="level_3" target="_self">puma basket</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_vans-authentic-1484.html" class="level_3" target="_self">vans authentic</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_adidas-tubular-1498.html" class="level_3" target="_self">adidas tubular</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_nike-cortez-1499.html" class="level_3" target="_self">nike cortez</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_nike-air-max-90-1500.html" class="level_3" target="_self">nike air max 90</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_adidas-campus-1501.html" class="level_3" target="_self">adidas campus</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_adidas-ultraboost-1502.html" class="level_3" target="_self">adidas ultraboost</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_adidas-pharrell-williams-1503.html" class="level_3" target="_self">adidas pharrell williams</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_nike-air-max-zero-1504.html" class="level_3" target="_self">nike air max zero</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_nike-huarache-1505.html" class="level_3" target="_self">nike huarache</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_nike-stefan-janoski-1506.html" class="level_3" target="_self">nike stefan janoski</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_nike-air-max-95-1507.html" class="level_3" target="_self">nike air max 95</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_adidas-climacool-1508.html" class="level_3" target="_self">adidas climacool</a></li><li class="level_3"><a href="/pol_m_MARKI_Most-Wanted_adidas-deerupt-1511.html" class="level_3" target="_self">adidas deerupt</a></li></ul></li><li class="level_2"><a href="/pol_m_MARKI_KUBOTA-1986.html" class="level_2 level_2_no_link" target="_self">KUBOTA</a></li></div><div class="clearfix"></div><div class="menu_more"><ul class="menu_more_bottom"></ul></div></ul></li><li class="level_1 hidden-phone" id="level_1_position_5"><a href="/pol_m_AKCESORIA-446.html" class="level_1 toggle" target="_self">AKCESORIA</a><ul class="level_2"><div class="level_2"><li class="level_2"><a href="/pol_m_AKCESORIA_Kosmetyki-do-obuwia-447.html" class="level_2 level_2_no_link" target="_self">Kosmetyki do obuwia</a></li><li class="level_2"><a href="/pol_m_AKCESORIA_Czapki-731.html" class="level_2 level_2_no_link" target="_self">Czapki</a></li><li class="level_2"><a href="/pol_m_AKCESORIA_Skarpetki-726.html" class="level_2 level_2_no_link" target="_self">Skarpetki</a></li><li class="level_2"><a href="/pol_m_AKCESORIA_Plecaki-725.html" class="level_2 level_2_no_link" target="_self">Plecaki</a></li><li class="level_2"><a href="/pol_m_AKCESORIA_Szaliki-1928.html" class="level_2 level_2_no_link" target="_self">Szaliki</a></li><li class="level_2"><a href="/pol_m_AKCESORIA_Torby-740.html" class="level_2 level_2_no_link" target="_self">Torby</a></li><li class="level_2"><a href="/pol_m_AKCESORIA_Zegarki-1485.html" class="level_2 toggle nexttolabel" target="_self">Zegarki</a><ul class="level_3"><li class="level_3"><a href="/pol_m_AKCESORIA_Zegarki_G-Shock-1487.html" class="level_3" target="_self">G-Shock</a></li><li class="level_3"><a href="/pol_m_AKCESORIA_Zegarki_CASIO-1488.html" class="level_3" target="_self">CASIO</a></li></ul></li><li class="level_2"><a href="/pol_m_AKCESORIA_Skarpetki-Happy-Socks-1512.html" class="level_2 level_2_no_link" target="_self">Skarpetki Happy Socks</a></li></div><div class="clearfix"></div><div class="menu_more"><ul class="menu_more_bottom"></ul></div></ul></li><li class="level_1 hidden-phone" id="level_1_position_6"><a href="https://sneakerstudio.pl/Nowosc-snewproducts-pol.html" class="level_1" target="_self">NOWOŚCI</a></li><li class="level_1 hidden-phone" id="level_1_position_7"><a href="/pol_m_COMING-SOON-623.html" class="level_1" target="_self">COMING SOON</a></li><li class="level_1 hidden-phone" id="level_1_position_8"><a href="https://sneakerstudio.pl/blog-pol.phtml" class="level_1" target="_self">BLOG</a></li><li class="level_1 hidden-phone gold" id="level_1_position_9"><a href="/pol_m_SALE-665.html" class="level_1" target="_self">SALE</a></li></ul></div><div id="breadcrumbs"><div id="breadcrumbs_sub"><h3>Jesteś tu:  </h3><ol><li class="bc-main"><span><a href="/">Strona główna</a></span></li><li class="category bc-item-1"><a class="category" href="/pol_m_MESKIE-187.html">MĘSKIE</a></li><li class="category bc-active bc-item-2"><a class="category" href="/pol_m_MESKIE_Marki_adidas-649.html">adidas</a></li><li class="bc-active bc-product-name"><span>Czapka męska adidas Originals Trefoil CD6973</span></li></ol></div></div></header><div id="layout" class="row clearfix"><aside class="col-md-3"><a href="#menu" class="mobile_menu close_sidebar"><i class="icon-remove"></i></a><div id="menu_additional"><h2>Twoje konto </h2><a data-tablet-class="hide" id="show_searching" href="/searching.php" title="Kliknij, by przejść do wyszukiwarki"><i class="icon-search"></i> Wyszukiwarka</a><a href="/client-new.php?register" title="Kliknij, aby przejść do formularza rejestracji. "><i class="icon-user"></i> Rejestracja </a><a href="/login.php" title="Kliknij, aby przejść do formularza logowania. "><i class="icon-signin"></i> Logowanie </a><a href="/login.php?operation=recover" title="Kliknij, aby przejść do formularza przypomnienia hasła. "><i class="icon-wrench"></i> Zapomniane hasło </a></div></aside><div id="content" class="col-md-12"><script type="text/javascript" class="ajaxLoad">
+      cena_raty = 69.00;
+      
+          var  client_login = 'false'
+        
+      var currency_format = '###,##0.00';
+        var currency_before_value = 'false';
+        var currency_space = 'true';
+        var currency_decimal_separator = ',';
+        var currency_grouping_separator = ' ';
+      var  client_points = '0'; 
+      var  points_used = ''; 
+      var  shop_currency = 'zł'; 
+      var product_data = {   
+      "currency":"zł",   
+      "product_type":"product_item",   
+      
+          "unit":"szt.",
+        
+      "unit_sellby":"1",
+      "unit_precision":"0", 
+
+      
+      "base_price":{
+      
+        "maxprice":"69.00",  
+      
+        "maxprice_formatted":"69,00 zł",  
+      
+        "maxprice_net":"56.10",  
+      
+        "maxprice_net_formatted":"56,10 zł",  
+      
+        "minprice":"69.00",  
+      
+        "minprice_formatted":"69,00 zł",  
+      
+        "minprice_net":"56.10",  
+      
+        "minprice_net_formatted":"56,10 zł",  
+      
+        "size_max_maxprice_net":"0.00",  
+      
+        "size_min_maxprice_net":"0.00",  
+      
+        "size_max_maxprice_net_formatted":"0,00 zł",  
+      
+        "size_min_maxprice_net_formatted":"0,00 zł",  
+      
+        "size_max_maxprice":"0.00",  
+      
+        "size_min_maxprice":"0.00",  
+      
+        "size_max_maxprice_formatted":"0,00 zł",  
+      
+        "size_min_maxprice_formatted":"0,00 zł",  
+      
+        "value":"69.00",
+        "price_formatted":"69,00 zł",
+        "price_net":"56.10",
+        "price_net_formatted":"56,10 zł",
+        "points_recive":"6.90",
+        "vat":"23",
+        "worth":"69.00",
+        "worth_net":"56.10",
+        "worth_formatted":"69,00 zł",
+        "worth_net_formatted":"56,10 zł",
+        "points":"69",
+        "points_sum":"69",
+        "srp":"69.00",
+        "srp_formatted":"69,00 zł",
+        "srp_net":"56.10",
+        "srp_net_formatted":"56,10 zł",
+        "basket_enable":"y",
+        "special_offer":"false",
+        "rebate_code_active":"n",
+        "priceformula_error":"false"
+      },
+      
+
+      
+      "order_quantity_range":{
+      
+      },
+      
+
+      "sizes":{
+      
+        "onesize":
+
+
+
+        {
+        
+          "type":"onesize",
+        
+          "priority":"0",
+        
+          "description":"uniwersalny",
+        
+          "name":"uniwersalny",
+        
+          "amount":"9",
+        
+          "amount_mo":"0",
+        
+          "amount_mw":"9",
+        
+          "amount_mp":"0",
+        
+          "code_extern":"CD6973 OSFM",
+        
+          "shipping_time":{ 
+          
+              "days":"0",
+              "hours":"0",
+              "minutes":"0",
+              "time":"2018-09-13 14:07",
+              "week_day":"4",
+              "week_amount":"0",
+              "today":"true"
+          },
+        
+          "availability":{ 
+          
+            "delivery_days":"0",
+            "delivery_date":"2018-09-13",
+            "days":"0",
+            "sum":"9",
+            "visible":"y",
+            "status_description":"Produkt dostępny",
+            "status_gfx":"/data/lang/pol/available_graph/graph_1_3.png",
+            "status":"enable"
+          },
+          "delivery":{ 
+          
+            "undefined":"false",
+            "shipping":"9.99",
+            "shipping_formatted":"9,99 zł",
+            "limitfree":"0.00",
+            "limitfree_formatted":"0,00 zł",
+            "shipping_change":"9.99",
+            "shipping_change_formatted":"9,99 zł",
+            "change_type":"up"
+          },
+          "price":{ 
+          
+            "value":"69.00",
+            "price_formatted":"69,00 zł",
+            "price_net":"56.10",
+            "price_net_formatted":"56,10 zł",
+            "points_recive":"6.90",
+            "vat":"23",
+            "worth":"69.00",
+            "worth_net":"56.10",
+            "worth_formatted":"69,00 zł",
+            "worth_net_formatted":"56,10 zł",
+            "points":"69",
+            "points_sum":"69",
+            "srp":"69.00",
+            "srp_formatted":"69,00 zł",
+            "srp_net":"56.10",
+            "srp_net_formatted":"56,10 zł",
+            "basket_enable":"y",
+            "special_offer":"false",
+            "rebate_code_active":"n",
+            "priceformula_error":"false"
+          },
+          "weight":{ 
+          
+            "g":"3",
+            "kg":"0.003"
+          } 
+        } 
+      }     
+      }  
+
+
+
+    </script><form id="projector_form" action="basketchange.php" method="post" class=" row proajax"><input id="projector_product_hidden" type="hidden" name="product" value="16782"><input id="projector_size_hidden" type="hidden" name="size" value="onesize"><input id="projector_mode_hidden" type="hidden" name="mode" value="1"><div class="projector_navigation"><div class="products_other_founds"><a class="previous" href="/product-pol-16801-Buty-meskie-sneakersy-adidas-Originals-Handball-Top-AQ0905.html"><i class="icon-angle-left"></i></a><a class="next" href="/product-pol-16752-Buty-meskie-sneakersy-adidas-UltraBoost-CM8109.html"><i class="icon-angle-right"></i></a></div><h1>Czapka męska adidas Originals Trefoil CD6973</h1><div class="projector_description description"><ul><li>Czapka adidas Originals Trefoil CD6973</li></ul></div></div><div class="photos col-md-7 col-xs-12 "><p></p><a href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_1.jpg" class="projector_medium_image" id="projector_image_1" onclick="Popup.show('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_1.jpg');return false;"><img class="photo" alt="Czapka męska adidas Originals Trefoil CD6973" title="" src="/pol_pm_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_1.jpg"></a><a href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_2.jpg" class="projector_medium_image" style="display:none;" id="projector_image_2" onclick="Popup.show('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_2.jpg');return false;"><img class="photo" alt="Czapka męska adidas Originals Trefoil CD6973" title="" src="/pol_pm_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_2.jpg"></a><a href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_3.jpg" class="projector_medium_image" style="display:none;" id="projector_image_3" onclick="Popup.show('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_3.jpg');return false;"><img class="photo" alt="Czapka męska adidas Originals Trefoil CD6973" title="" src="/pol_pm_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_3.jpg"></a><a href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_4.jpg" class="projector_medium_image" style="display:none;" id="projector_image_4" onclick="Popup.show('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_4.jpg');return false;"><img class="photo" alt="Czapka męska adidas Originals Trefoil CD6973" title="" src="/pol_pm_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_4.jpg"></a><a href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_5.jpg" class="projector_medium_image" style="display:none;" id="projector_image_5" onclick="Popup.show('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_5.jpg');return false;"><img class="photo" alt="Czapka męska adidas Originals Trefoil CD6973" title="" src="/pol_pm_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_5.jpg"></a><a href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_6.jpg" class="projector_medium_image" style="display:none;" id="projector_image_6" onclick="Popup.show('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_6.jpg');return false;"><img class="photo" alt="Czapka męska adidas Originals Trefoil CD6973" title="" src="/pol_pm_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_6.jpg"></a><a href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_7.jpg" class="projector_medium_image" style="display:none;" id="projector_image_7" onclick="Popup.show('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_7.jpg');return false;"><img class="photo" alt="Czapka męska adidas Originals Trefoil CD6973" title="" src="/pol_pm_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_7.jpg"></a><a href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_8.jpg" class="projector_medium_image" style="display:none;" id="projector_image_8" onclick="Popup.show('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_8.jpg');return false;"><img class="photo" alt="Czapka męska adidas Originals Trefoil CD6973" title="" src="/pol_pm_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_8.jpg"></a><div class="enclosures"><a class="projector_small_image active" data-slide-index="0" rel="#projector_image_1" href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_1.jpg"><img src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_1.jpg" alt="Czapka męska adidas Originals Trefoil CD6973" title="Czapka męska adidas Originals Trefoil CD6973"></a><a class="projector_small_image" data-slide-index="1" rel="#projector_image_2" href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_2.jpg"><img src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_2.jpg" alt="Czapka męska adidas Originals Trefoil CD6973" title="Czapka męska adidas Originals Trefoil CD6973"></a><a class="projector_small_image" data-slide-index="2" rel="#projector_image_3" href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_3.jpg"><img src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_3.jpg" alt="Czapka męska adidas Originals Trefoil CD6973" title="Czapka męska adidas Originals Trefoil CD6973"></a><a class="projector_small_image" data-slide-index="3" rel="#projector_image_4" href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_4.jpg"><img src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_4.jpg" alt="Czapka męska adidas Originals Trefoil CD6973" title="Czapka męska adidas Originals Trefoil CD6973"></a><a class="projector_small_image" data-slide-index="4" rel="#projector_image_5" href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_5.jpg"><img src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_5.jpg" alt="Czapka męska adidas Originals Trefoil CD6973" title="Czapka męska adidas Originals Trefoil CD6973"></a><a class="projector_small_image" data-slide-index="5" rel="#projector_image_6" href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_6.jpg"><img src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_6.jpg" alt="Czapka męska adidas Originals Trefoil CD6973" title="Czapka męska adidas Originals Trefoil CD6973"></a><a class="projector_small_image" data-slide-index="6" rel="#projector_image_7" href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_7.jpg"><img src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_7.jpg" alt="Czapka męska adidas Originals Trefoil CD6973" title="Czapka męska adidas Originals Trefoil CD6973"></a><a class="projector_small_image" data-slide-index="7" rel="#projector_image_8" href="/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_8.jpg"><img src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_8.jpg" alt="Czapka męska adidas Originals Trefoil CD6973" title="Czapka męska adidas Originals Trefoil CD6973"></a></div></div><div class="product_info col-md-5 col-xs-12 "><div class="product_info_top"><a class="firmlogo" href="/firm-pol-1308137276-adidas-Originals.html"><img src="/data/lang/pol/producers/gfx/projector/1308137276_1.png" alt="adidas Originals" title="adidas Originals"></a><div class="special_info_icons"><div><img src="https://sneakerstudio1.iai-shop.com/data/include/cms/projector_icons/truck.png" alt="Darmowa dostawa"><span>Darmowa dostawa</span></div><div><img src="https://sneakerstudio1.iai-shop.com/data/include/cms/projector_icons/box.png" alt="Ten produkt zostanie dostarczony w opakowaniu Double Box"><span>Ten produkt zostanie dostarczony w opakowaniu Double Box</span></div><div><img src="https://sneakerstudio1.iai-shop.com/data/include/cms/projector_icons/30days.png" alt="30 dni na zwrot"><span>30 dni na zwrot</span></div></div><div class="basic_info"><div class="producer"><span>Producent: </span><a class="brand" title="Kliknij, by zobaczyć wszystkie produkty tego producenta" href="/firm-pol-1308137276-adidas-Originals.html">adidas Originals</a></div><div class="code"><span>Kod produktu: </span><strong content="mpn:CD6973">CD6973</strong></div></div></div><div class="product_section sizes" id="projector_sizes_cont"><label class="projector_label">
+            Rozmiar: 
+          </label><div class="product_section_sub"><label class="select_button size_litera" data-type="onesize" data-eu="uniwersalny">uniwersalny</label></div></div><div class="product_section" id="projector_status_description_wrapper" style="display:none"><label></label><div><img id="projector_status_gfx" class="projector_status_gfx" alt="status_icon" src="/data/lang/pol/available_graph/graph_1_3.png"><span class="projector_status_description" id="projector_status_description">Produkt dostępny</span></div></div><div class="product_section tell_availability" id="projector_tell_availability" style="display:none"><label></label><div class="product_section_sub"><a href="#showAvabilityDialog" class="btn-small projector_tell_availabilit" id="projector_tell_availability_link" onclick="showAvabilityDialog();return false;">
+              Produkt wyprzedany
+            </a></div></div><div class="product_section" id="projector_shipping_info" style="display:none;"><label></label><div><span class="projector_delivery_days" id="projector_delivery_days">              
+                      Wysyłka dziś
+                    </span><a class="shipping_info" href="#shipping_info" title="Sprawdź czasy i koszty wysyłki"><i class="icon-time"></i>   
+              Sprawdź czasy i koszty wysyłki
+            </a></div></div><div id="projector_prices_wrapper"><div class="product_section" id="projector_price_value_wrapper"><label class="projector_label">
+                                        Nasza cena                                             
+                                    </label><div><div id="projector_price_maxprice_wrapper" style="display:none;"><del class="projector_price_maxprice" id="projector_price_maxprice"></del><span class="projector_price_yousave" id="projector_price_yousave" style="display:none;"></span></div><strong class="projector_price_value" id="projector_price_value">69,00 zł</strong><div class="price_gross_info"><small class="projector_price_unit_sep">
+                       /                            
+                    </small><small class="projector_price_unit_sellby" id="projector_price_unit_sellby" style="display:none">1</small><small class="projector_price_unit" id="projector_price_unit">szt.</small></div></div></div><span style="display:none;"><link>In stock
+              </span></div><div id="projector_buy_section" class="clearfix product_section"><label class="projector_label">
+            Ilość:
+          </label><div class="projector_buttons" id="projector_buttons"><div class="projector_number" id="projector_number_cont"><button id="projector_number_down" class="projector_number_down" type="button"><i class="icon-minus"></i></button><input class="projector_number" name="number" id="projector_number" value="1"><button id="projector_number_up" class="projector_number_up" type="button"><i class="icon-plus"></i></button></div><button class="btn-large projector_butttons_buy" id="projector_button_basket" type="submit" title="Dodaj produkt do koszyka"><i style="float: left; line-height: 1; margin-left: -10px; margin-right: 10px; margin-top: 2px;" class="icon-shopping-cart hidden-phone"></i> Dodaj do koszyka<i style="line-height: 1; margin-left: -10px; margin-right: 10px; margin-top: 2px;" class="icon-shopping-cart visible-phone"></i></button><a href="#add_favorite" class="projector_buttons_obs" id="projector_button_observe" onclick="$('#projector_mode_hidden').val(2);$('#projector_form').submit();" data-mobile-class="btn-small" title="Dodaj do obserwowanych"><i style="float: left; line-height: 1; margin-left: 5px;" class="icon-star icon-large"></i><span class="hidden-desktop">Dodaj do obserwowanych</span></a></div></div><div class="product_section points" id="projector_points_wrapper"><div class="product_section_sub"><div class="projector_points_sub_wrapper"><div class="projector_price_points_wrapper" id="projector_price_points_wrapper"><label class="projector_label">
+                  Cena w punktach: 
+                </label><span class="projector_price_points" id="projector_price_points">69<span class="projector_currency"> pkt.</span></span></div><div class="projector_price_points_recive_wrapper" id="projector_price_points_recive_wrapper"><label class="projector_label">
+                  Po opłaceniu zamówienia na ten produkt otrzymasz: 
+                </label><span class="projector_points_recive_points" id="projector_points_recive_points">6.90<span class="projector_currency"> pkt.</span></span></div></div><button id="projector_button_points_basket" type="submit" name="forpoints" value="1" class="btn" style="display:none;">
+              Kup za punkty
+            </button></div></div><div class="product_section bookmarklets_big"><ul><li>
+                        <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) {return;}
+                          js = d.createElement(s); js.id = id;
+                          js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1";
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+
+                        <div class="fb-like" data-href="https://sneakerstudio.pl/product-pol-16782-Czapka-meska-adidas-Originals-Trefoil-CD6973.html" data-send="true" data-layout="standard" data-width="450" data-show-faces="false" data-action="like" data-colorscheme="light"></div>
+                        </li><li><a class="twitter-share-button" href="https://twitter.com/share?url=https://sneakerstudio.pl/product-pol-16782-Czapka-meska-adidas-Originals-Trefoil-CD6973.html&amp;lang=pl"></a></li></ul></div></div><div class="clearBoth"></div></form><div id="projector_rebatenumber_tip_copy" style="display:none;"><img class="projector_rebatenumber_tip" src="/gfx/pol/help_tip.png?r=1536225480" alt="tip"></div><div id="alert_cover" class="projector_alert_55916" style="display:none" onclick="Alertek.hide_alert();"></div><script type="text/javascript" class="ajaxLoad">
+      projectorInitObject.contact_link = "/contact-pol.html";
+      projectorObj.projectorInit(projectorInitObject);
+      var iai_spec = 'W koszyku znajduje się produkt specjalny, który jest wyłączony z wszelkich akcji rabatowych. Sprzedaż produktów specjalnych ograniczona jest do 1 pary w ramach zamówienia.'; 
+var iai_productAddAjaxSuccess = 'Dodano towar do koszyka'; 
+
+
+        var sizechanger = {
+          'eu' : [],
+          'uk' : [],
+          'us' : [],
+          'cm' : []
+        };
+
+    </script><script type="text/javascript" class="ajaxLoad">
+     var bundle_title =   "Cena towarów poza zestawem";
+
+    
+</script><div id="avabilityDialog" class="avabilityDialog" style="display:none;"><div class="avabilityDialog_sub"><a href="#" id="avabilityDialog_close" class="avabilityDialog_close"><img src="/gfx/pol/zamknij.gif?r=1536225480" alt="Zamknij" class="avabilityDialog_close"></a><h2>Podaj dane kontaktowe, a my damy Ci znać kiedy towar będzie dostępny</h2><div class="avabilityDialog_pr_info"><img alt="Czapka męska adidas Originals Trefoil CD6973" class="avabilityDialog" src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_1.jpg"><ul class="avabilityDialog_pr_info"><li id="avability_product_name"><strong>Czapka męska adidas Originals Trefoil CD6973</strong></li><li id="avability_product_code"><span>Kod produktu: </span><strong>CD6973</strong></li><li id="avability_product_size" style="display:none;"><span>Rozmiar: </span></li></ul></div><form action="/basketchange.php"><input id="avability_product_hidden" type="hidden" name="product" value="16782"><input id="avability_size_hidden" type="hidden" name="size" value=""><input id="avability_mode_hidden" type="hidden" name="mode" value="2"><div class="avabilityDialog_text1"></div><input type="hidden" name="avability_track" value="only_one"><div class="avabilityDialog_text2">
+                        Wprowadź swój adres e-mail, na który wyślemy Ci <b>jednorazowe powiadomienie</b>, gdy ten towar będzie ponownie w sprzedaży.
+                    </div><div class="avabilityDialog_email"><label>Twój adres e-mail:</label><input type="text" name="email" id="avabilityDialog_email" value=""><span class="validation_icons"><img src="/gfx/pol/correct.png?r=1536225480" alt="correct" class="correct_icon" style="display:none;"><img src="/gfx/pol/incorrect.png?r=1536225480" alt="incorrect" class="incorrect_icon" style="display:none;"></span></div><div class="avabilityDialog_tel" id="avabilityDialog_tel"><label><input type="checkbox"><span>Chcę dodatkowo otrzymać wiadomość SMS z powiadomieniem </span></label><div class="avabilityDialog_tel2" id="avabilityDialog_phone2"><label class="avabilityDialog_tel">Twój numer telefonu: </label><input type="text" name="phone" id="avabilityDialog_phone"><span class="validation_icons"><img src="/gfx/pol/correct.png?r=1536225480" alt="correct" class="correct_icon" style="display:none;"><img src="/gfx/pol/incorrect.png?r=1536225480" alt="incorrect" class="incorrect_icon" style="display:none;"></span></div></div><div class="avabilityDialog_text3">
+                        Powyższe dane nie są używane do przesyłania newsletterów lub innych reklam. Włączając powiadomienie zgadzasz się jedynie na wysłanie jednorazowo informacji o ponownej dostępność tego towaru. 
+                    </div><div id="avabilityDialog_buttons1" class="avabilityDialog_buttons1"><button type="submit" id="avabilityDialog_submit" class="btn avabilityDialog_submit">
+                            Zapisz mnie na powiadomienia o dostępności
+                        </button></div></form></div></div><script class="ajaxLoad">
+            projector_notice_init();
+        </script><div class="component_projector_longdescription" id="component_projector_longdescription_not"><div class="n56174_main"><div class="n56174_sub"><div class="n56174_label"><span class="projector_label">
+		                    PEŁEN OPIS
+		                </span></div><div class="n56174_desc"><DIV class="col-md-6 col-xs-12 short_desc">  
+<DIV class="desc_wrappper row"><BR>    
+<CENTER><!--PARAMETR--></CENTER></DIV></DIV>
+<DIV class="col-md-6 col-xs-12 desc_traits">
+<DIV class=desc_trait><!--NAZWA PARAMETRU --><SPAN class=trait_label>Producent:</SPAN> <!--WARTOŚĆ PARAMETRU--><SPAN class=trait_desc>adidas Originals</SPAN> </DIV>
+<DIV class=desc_trait><SPAN class=trait_label>Model:</SPAN>&nbsp; Trefoil Cap</DIV>
+<DIV class=desc_trait><SPAN class=trait_label>Numer katalogowy:</SPAN> <SPAN class=trait_desc>CD6973</SPAN></DIV>
+<DIV class=desc_trait><SPAN class=trait_label>Materiał:</SPAN>&nbsp;<SPAN class=trait_desc>65% poliester + 35% bawełna</SPAN></DIV>
+<DIV class=desc_trait><SPAN class=trait_label>Kolor:</SPAN>&nbsp;<SPAN class=trait_desc>granatowy / biały</SPAN></DIV>
+<DIV class=desc_trait><SPAN class=trait_label>Informacje dodatkowe:</SPAN> </DIV>
+<DIV class=desc_trait>Regulowane zapięcie na zatrzask z tyłu<BR>Kontrastowe wyszywane logo Trefoil z przodu</DIV>
+<DIV class=desc_trait></DIV>
+<DIV class=desc_trait>&nbsp;</DIV>
+<DIV class=desc_trait><SPAN class=trait_label></SPAN>&nbsp;</DIV></DIV>
+<DIV class="col-md-12 long_desc"><BR><BR>&nbsp;</DIV>
+<DIV class=clearfix></DIV>
+<STYLE>
+.italic_label {
+  display: block;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+
+.short_desc > img {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.desc_trait {
+  padding: 2px;
+}
+
+.trait_label {
+  font-weight: 600;
+}
+
+.long_desc {
+  text-align: center;
+}
+</STYLE>
+</div></div></div></div><div class="component_projector_cms cm" id="component_projector_cms"><div class="n56196_main"><div class="n56196_sub"><div id="Dostawa" class="projector_hidden_section">
+Realizujemy wysyłkę do każdego miejsca w Polsce oraz do wielu krajów w Europie .Szczegóły poznasz w linku poniżej:
+http://sneakerstudio.pl/Wysylka-clinks-pol-31.html
+</div>
+
+<div id="Zwroty" class="projector_hidden_section">
+Masz możliwość zwrotu towaru do 30 dni od momentu otrzymania towaru.Koszt odesłania towaru ponosi kupujący.
+</div></div></div></div><div class="main_hotspot" id="projector_associated_zone1" data-ajaxload="true" data-pagetype="projector"></div><div class="n58676"><div id="tabs_58676"></div></div><div class="clearBoth" style="height: 0px;"></div><script class="ajaxLoad">$(function(){initHovers('tabs_58676',optionsHovers('0',''),'true');})
+        </script><div class="component_projector_opinions" id="component_projector_opinions"><div class="n68503_label"><span class="n68503_label">Opinie użytkowników</span></div><div class="n68503_main1"><div class="n68503_sub"><div id="n54150_hidden" class="hidden_55773"><div class="n56197_login"><span class="n56197_login">Aby móc ocenić produkt lub dodać opinię, musisz być <a class="loginPopUpShow" href="/login.php">zalogowany</a>.</span></div></div></div></div></div><div class="component_projector_askforproduct" id="component_projector_askforproduct"><a id="askforproduct" href="#askforproduct_close"></a><form action="settings.php" class="projector_askforproduct" method="post"><div class="n61389_label"><span class="n61389_label">
+            Zapytaj o produkt:
+        </span></div><div class="n61389_main"><div class="n61389_sub"><h3 class="n61389_desc">
+                Jeżeli powyższy opis jest dla Ciebie niewystarczający, prześlij nam swoje pytanie odnośnie tego produktu. Postaramy się odpowiedzieć tak szybko jak tylko będzie to możliwe.
+            </h3><input type="hidden" name="question_product_id" value="16782"><input type="hidden" name="question_action" value="add"><div class="form"><div class="n61389_left2"><span class="title_email">E-mail:</span></div><div class="n61389_right2"><input id="askforproduct_email" class="n61389_form" type="text" name="question_email" value=""><img src="/gfx/pol/need.gif?r=1536225480" alt="To pole jest wymagane do złożenia zamówienia."></div></div><div class="form" id="form_textarea2"><div class="n61389_left3"><span class="title_pytanie">Pytanie:</span></div><div class="n61389_right3"><textarea class="n61389_body" id="n56188_question" name="product_question" rows="6" cols="52"></textarea><img src="/gfx/pol/need.gif?r=1536225480" alt="To pole jest wymagane do złożenia zamówienia."></div></div><div class="n61389_submit"><input class="btn-small n61389_submit" type="submit" value="Wyślij"></div><div class="n61389_legend">
+                    pola oznaczone - 
+                    <img src="/gfx/pol/need.gif?r=1536225480" alt="To pole jest wymagane do złożenia zamówienia."> - są wymagane 
+                </div></div></div></form></div><script class="ajaxLoad">
+var txt_askforproduct_email = 'Wprowadź poprawny adres e-mail';
+var txt_askforproduct_product = 'Wprowadź pytanie do produktu';
+askforproduct.init();
+</script><div class="component_projector_suggestproduct" id="component_projector_suggestproduct"><a id="suggestproduct" href="#suggestproduct_close"></a><form action="contact.php" class="projector_suggestproduct" method="post"><div class="n56183_label"><span class="n56183_label">
+			Poleć ten produkt:
+		</span></div><div class="n56183_main"><div class="n56183_sub"><h3 class="n56183_desc">
+				Jeżeli chcesz poinformować swojego znajomego o produkcie, który Twoim zdaniem może go zainteresować, skorzystaj z poniższego formularza.
+			</h3><div class="form"><div class="n56183_left1"><span class="title_do">Do:</span></div><div class="n56183_right1"><input type="hidden" name="product" value="16782"><input maxlength="255" class="n56183_form" id="projector_suggestproduct_to" type="text" name="to"><img src="/gfx/pol/need.gif?r=1536225480" alt="To pole jest wymagane do złożenia zamówienia."></div></div><div class="n56183_desc">
+				Możesz podać więcej adresów e-mail, rozdzielając je przecinkami
+			</div><div class="form"><div class="n56183_left2"><span class="title_podpis">Podpis:</span></div><div class="n56183_right2"><input id="projector_suggestproduct_firstname" class="n56183_form" type="text" name="firstname" value=""><img src="/gfx/pol/need.gif?r=1536225480" alt="To pole jest wymagane do złożenia zamówienia."></div></div><div class="form" id="form_textarea"><div class="n56183_left3"><span class="title_tresc">Treść:</span></div><div class="n56183_right3"><textarea class="n56183_body" id="projector_suggestproduct_body" name="body" rows="6" cols="52">Znalazłem coś wartego uwagi. Wydawało mi się, że ten produkt może być dla Ciebie interesujący, więc przesyłam Ci link do niego.</textarea><img src="/gfx/pol/need.gif?r=1536225480" alt="To pole jest wymagane do złożenia zamówienia."></div></div><div class="n56183_submit"><input class="btn-small n56183_submit" type="submit" value="Wyślij"></div><div class="n56183_legend">
+                    pola oznaczone - 
+                    <img src="/gfx/pol/need.gif?r=1536225480" alt="To pole jest wymagane do złożenia zamówienia."> - są wymagane 
+                </div></div></div></form></div><script type="text/javascript">
+        
+        var Popup_enclosures = new Object();
+         var basecount = '8';
+        var baseurl= 'http://sneakerstudio.pl/';
+     
+</script><div id="show_popup_photo" style="display:none;" onmouseover="document.getElementById('popup_next_prev').style.display='block';" onmouseout="document.getElementById('popup_next_prev').style.display='none';"><a href="#" id="show_popup_photo_close" class="projector_photo_close_55916"><i class="icon-remove-circle"></i></a><div class="projector_showpopup_poprznext_55916" id="popup_next_prev"><a href="Javascript:void(0);" class="projector_showpopup_previous_55916" onclick="Popup.prev_img();return false;"><i class="icon-chevron-sign-left"></i></a><a href="Javascript:void(0);" class="projector_showpopup_next_55916" onclick="Popup.next_img();return false;"><i class="icon-chevron-sign-right"></i></a></div><div id="show_popup_photo_sub"><img id="big_photo" alt="Czapka męska adidas Originals Trefoil CD6973" class="projector_big_photo_55916" src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_1.jpg"></div><div class="projector_miniaturki_55916" id="popup_miniaturki"><img class="projector_showpopup_img_55916" alt="" onclick="Popup.resize('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_1.jpg','900','900');" src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_1.jpg"><script type="text/javascript">
+                     Popup_enclosures[1]=new Array('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_1.jpg','900','900');
+        </script><img class="projector_showpopup_img_55916" alt="" onclick="Popup.resize('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_2.jpg','900','900');" src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_2.jpg"><script type="text/javascript">
+                     Popup_enclosures[2]=new Array('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_2.jpg','900','900');
+        </script><img class="projector_showpopup_img_55916" alt="" onclick="Popup.resize('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_3.jpg','900','900');" src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_3.jpg"><script type="text/javascript">
+                     Popup_enclosures[3]=new Array('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_3.jpg','900','900');
+        </script><img class="projector_showpopup_img_55916" alt="" onclick="Popup.resize('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_4.jpg','900','900');" src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_4.jpg"><script type="text/javascript">
+                     Popup_enclosures[4]=new Array('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_4.jpg','900','900');
+        </script><img class="projector_showpopup_img_55916" alt="" onclick="Popup.resize('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_5.jpg','900','900');" src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_5.jpg"><script type="text/javascript">
+                     Popup_enclosures[5]=new Array('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_5.jpg','900','900');
+        </script><img class="projector_showpopup_img_55916" alt="" onclick="Popup.resize('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_6.jpg','900','900');" src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_6.jpg"><script type="text/javascript">
+                     Popup_enclosures[6]=new Array('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_6.jpg','900','900');
+        </script><img class="projector_showpopup_img_55916" alt="" onclick="Popup.resize('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_7.jpg','900','900');" src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_7.jpg"><script type="text/javascript">
+                     Popup_enclosures[7]=new Array('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_7.jpg','900','900');
+        </script><img class="projector_showpopup_img_55916" alt="" onclick="Popup.resize('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_8.jpg','900','900');" src="/pol_ps_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_8.jpg"><script type="text/javascript">
+                     Popup_enclosures[8]=new Array('/pol_pl_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_8.jpg','900','900');
+        </script></div></div><div id="cover" style="display:none"></div><script type="text/javascript">
+$(function(){
+Popup.cloneLayers();
+});
+</script></div></div><footer class="clearfix"><div class="menu_newsletter clearfix" id="menu_newsletter"><form action="settings.php" method="post" class="row"><input id="mailing_action" name="mailing_action" value="add" type="hidden"><div class="newsletter_title leftpadding col-md-5 col-lg-6 col-sm-12"><strong>newsletter  <i class="icon-envelope-alt"></i></strong><span>BĄDŹ NA BIEŻĄCO I ZAPISZ SIĘ DO NASZEGO NEWSLETTERA</span></div><div class="col-md-7 col-lg-6 col-sm-12 add_me_form"><div class="inpucik"><input name="mailing_email" type="text" placeholder="-5% ZA ZAPIS DO NEWSLETTERA"></div><div class="przycisk"><a href="#add_newsletter" class="btn add_newsletter" title="Kliknij, aby dodać swój adres e-mail do naszej bazy">
+                            Zapisz
+                    </a></div></div></form></div><div id="footer_links" class="row clearfix"><div id="footer_links_sub" class="col-md-9 col-sm-12"><div class="row"><ul class="footer_links col-md-4 col-xs-12" id="links_footer_1"><li><h3><span>Bezpieczne zakupy</span></h3><ul class="footer_links_sub"><li><a href="https://sneakerstudio.pl/Wysylka-clinks-pol-31.html" target="_self">Koszty wysyłki</a></li><li><a href="https://sneakerstudio.pl/O-nas-clinks-pol-30.html" target="_self">O nas</a></li><li><a href="https://sneakerstudio.pl/Platnosci-clinks-pol-37.html" target="_self">Płatności</a></li><li><a href="https://sneakerstudio.pl/Reklamacje-i-gwarancje-clinks-pol-33.html" target="_self">Reklamacje i gwarancje</a></li><li><a href="https://sneakerstudio.pl/Zwroty-odstapienie-od-umowy--clinks-pol-34.html" target="_self">Zwroty (odstąpienia od umowy)</a></li></ul></li></ul><ul class="footer_links col-md-4 col-xs-12" id="links_footer_2"><li><h3><span>Informacje</span></h3><ul class="footer_links_sub"><li><a href="https://sneakerstudio.pl/Kontakt-clinks-pol-29.html" target="_self">Kontakt</a></li><li><a href="https://sneakerstudio.pl/Regulamin-Wzor-do-samodzielnej-zmiany-cabout-pol-1.html" target="_blank">Regulamin</a></li><li><a href="https://sneakerstudio.pl/Polityka-prywatnosci-clinks-pol-35.html" target="_self">Polityka prywatności</a></li><li><a href="/sitemap.php" target="_self">Mapa strony</a></li><li><a href="https://sneakerstudio.pl/SneakerClub-clinks-pol-89.html" target="_self">SneakerClub</a></li></ul></li></ul><ul class="footer_links col-md-4 col-xs-12" id="links_footer_3"><li><h3><span>MOJE KONTO</span></h3><ul class="footer_links_sub"><li><a href="https://sneakerstudio.pl/signin.php" target="_self">Zaloguj</a></li><li><a href="https://sneakerstudio.pl/signin.php" target="_self">Rejestracja</a></li><li><a href="/basketedit.php?mode=1" target="_self">Koszyk</a></li><li><a href="/basketedit.php?mode=2" target="_self">Ulubione</a></li></ul></li></ul></div></div><div class="menu_contact_wrapper col-md-3 col-sm-12"><ul id="menu_contact" class="footer_links"><li class="contact_title"><h2 class="contact_mail"><span><i style="font-size: 90%;" class="icon-envelope"></i> e-mail
+                    </span></h2></li><li class="contact_mail"><a href="mailto:sklep@sneakerstudio.pl">sklep@sneakerstudio.pl</a></li><li class="contact_phone"><a href="tel:+48122100251">+48 122100251</a></li></ul></div></div><div class="n60972_main "><div class="n60972_main_s"><div class="platnosci_54388"><a class="n60972_a" target="_self" title="Płatności"><img alt="Płatności" style="width:983px;height:50px;" src="/data/include/img/links/1447856629.png"></a><span></span>
+<style type="text/css">
+#container div.component_projector_longdescription {font-weight: normal;}
+#search strong.icons {line-height: 1em;}
+div.platnosci_54388 {width: auto;}
+#menu_filter #filter_sizes li label {display: block;display:flex; width:57px;}
+li.contact_phone a {font-size: inherit !important;}
+li.contact_mail a {font-size: 18px !important;}
+div.component_projector_longdescription {font-size: 1.2em; font-weight: bold; letter-spacing: 0.5px;}
+/* span.promo_percent {width: 40px; height: 40px; line-height: 40px; font-size: 18px;} */
+div.n63634_label, div.n63634_wrapper {z-index: 1;}
+.menu_category1 > span {display: block; padding-left: 10px;}
+/* a.menu_category1 {padding: 0;} */
+.menu_category1 > img {margin: -3px;}
+div.menu_cat_sub {padding: 0;}
+.orbittour-container {width: auto !important}
+div.orbittour-message p {display: block !important;}
+#menu_categories a.level_1 {margin-right: 9px; font-size: 14px;}
+#menu_categories a.level_1.toggle::after {margin-left: 2px;}
+#projector_form div.bookmarklets_big {clear: both;}
+a.projector_medium_image {height: auto !important;}
+.orbittour-initialized div.orbittour-viewer-container {transition: none; width: 100% !important;}
+
+@media only screen and (max-width: 979px) {
+#menu_search {display: none !important;}
+}
+
+@media only screen and (max-width: 749px) {
+#projector_form div.product_section.sizes {z-index: 8;}
+#projector_form div.product_section.versions {z-index: 9;}
+        .n56174_desc table {width: 100% !important;}
+	#menu_search {display: block !important;}
+	.top_flags a {float: none; margin-right: 15px;}
+	div.top_flags {
+	    clear: both;
+	    display: block;
+	    margin: 0 auto;
+	    overflow: hidden;
+	    padding: 10px;
+	    text-align: center;
+	    width: 100%;
+	}
+	div.menu_settings_bar {display: block; float: none;}
+	div.menu_settings_panel {top: 70px;}
+	.menu_settings_panel td {display: block;}
+	#menu_top h2 a, #menu_top h1 a {display: block; width: 100% !important; text-align: center; height: auto !important;}
+	#menu_top {min-height: 150px;}
+
+}
+
+@media only screen and (min-width: 1170px) {
+#menu_categories a.level_1 {margin-right: 20px; font-size: 15px;}
+#menu_categories a.level_1.toggle::after {margin-left: 5px;}
+}
+#filter_sizes .filter_quantity {
+    display: none !important;
+}
+
+</style>
+
+<script type="text/javascript">
+$(function(){
+// LOGO
+// $('#menu_top a').remove();
+// $('#menu_top > *').append('<a style="width:279px;height:120px" target="_self" href="http://sneakerstudio.pl" title="" class="l-fixed"><img style="width:279px;height:120px" alt="" src="/data/include/cms/1203002473.png"></a>');
+
+$('a#show_searching').unbind().die().click(function(){return false;});
+})
+</script><div id="social_icons" style="float: left; margin-top: 20px; margin-right: 20px; margin-bottom: 28px;">
+<a href="https://www.facebook.com/SneakerStudioCOM" title="Facebook" target="_blank" rel="nofollow"><img style="width: 50px; margin-right:10px; margin-top: 2px;" src="https://sneakerstudio.pl/data/include/cms/facebook.jpg" alt="Facebook" title="Facebook"/></a>
+
+<a href="https://www.instagram.com/sneakerstudio_com" title="Instagram" target="_blank" rel="nofollow"><img style="width: 50px; margin-right: 10px; margin-top: 2px;" src="https://sneakerstudio.pl/data/include/cms/instagram.jpg" alt="VK" title="Instagram"/></a>
+
+<a href="https://www.youtube.com/channel/UCRd3J7HsmgChJ8CFuufAlDQ" title="YouTube" target="_blank" rel="nofollow"><img style="width: 50px; margin-right: 10px; margin-top: 2px;" src="https://sneakerstudio.pl/data/include/cms/youtube.jpg" alt="YouTube" title="YouTube"/></a>
+
+<a href="https://sneakerstudio.pl/data/include/cms/snapchat.jpg" title="Snapchat" target="_blank" rel="nofollow">
+<img style="width: 50px; margin-right: 10px; margin-top: 2px;" src="/data/include/cms/sneakerstudio/social_icons/snapchat.jpg" alt="Snapchat" title="Snapchat"/></a>
+</div></div><a class="n53399_iailogo" target="_blank" href="https://www.idosell.com/pl/shop/?utm_source=clientShopSite&amp;utm_medium=Label&amp;utm_campaign=PoweredByBadgeLink" title="Sklep internetowy IdoSell Shop"><img class="n53399_iailogo" src="/ajax/opartyo_IdoSellShop_black.png" alt="Sklep internetowy IdoSell Shop"></a></div><div class="footer_additions" id="n58182_footer_additions"><span class="footer_comments">Copyright © 2015 - 2018 SneakerStudio. All Rights Reserved</span></div></div><div class="rwdswicher"><a href="#" class="rs-link" data-always-visible="false" data-link-desktop="Wersja dla komputerów stacjonarnych" data-link-responsive="Wersja dla urządzeń mobilnych"></a></div><script type="text/javascript">
+var instalment_currency = 'zł';
+
+		var koszyk_raty = parseFloat(0.00);
+	
+		var basket_count = 0;
+	</script><script type="application/ld+json">
+            {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            
+            "url": "https://sneakerstudio.pl/",
+            "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://sneakerstudio.pl/search.php?text={search_term_string}",
+            "query-input": "required name=search_term_string"
+            }
+            }
+        </script><script type="application/ld+json">
+                {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "url": "https://sneakerstudio.pl/",
+                "logo": "https://sneakerstudio.pl//data/gfx/mask/pol/logo_1_big.png"
+                }
+            </script><script type="application/ld+json">
+                {
+                "@context": "http://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                "@id": "https://sneakerstudio.pl//pol_m_MESKIE-187.html",
+                "name": "MĘSKIE"
+                }
+                }
+            ,
+                {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                "@id": "https://sneakerstudio.pl//pol_m_MESKIE_Marki_adidas-649.html",
+                "name": "adidas"
+                }
+                }
+            ]
+                }
+            </script><script type="application/ld+json">
+                        {
+                        "@context": {
+                        "gs1": "http://gs1.org/voc/",
+                        "s": "https://schema.org/",
+                        "xsd": "http://www.w3.org/2001/XMLSchema#",
+                        "@vocab": "http://gs1.org/voc/"
+                        },
+                        "@type": [
+                        "gs1:Offer",
+                        "s:Offer"
+                        ],
+                        
+                        "s:priceSpecification": [
+                        {
+                        "s:priceCurrency": "PLN",
+                        "s:price": {
+                        "@value": "69.00",
+                        "@type": "xsd:float"
+                        },
+                        "s:eligibleQuantity": {
+                        "s:value": {
+                        "@value": "1",
+                        "@type": "xsd:float"
+                        },
+                        "s:unitCode": "szt.",
+                        "@type": [
+                        "gs1:QuantitativeValue",
+                        "s:QuantitativeValue"
+                        ]
+                        },
+                        "@type": [
+                        "gs1:PriceSpecification",
+                        "s:PriceSpecification"
+                        ]
+                        }
+                        ],
+                        "itemOffered": {
+                        
+                            "@type": [
+                            "gs1:Product",
+                            "s:Product"
+                            ],
+                        
+                        
+                        "s:image": {
+                        "s:width": {
+                        "@value": "550",
+                        "@type": "xsd:integer"
+                        },
+                        "s:height": {
+                        "@value": "550",
+                        "@type": "xsd:integer"
+                        },
+                        "s:url": "https://sneakerstudio.pl//pol_pm_Czapka-meska-adidas-Originals-Trefoil-CD6973-16782_1.jpg",
+                        "@type": [
+                        "gs1:ReferencedFileDetails",
+                        "s:MediaObject"
+                        ]
+                        },
+                        
+                            "s:name": [
+                            {
+                            "@type": [
+                            "gs1:productName",
+                            "s:name"
+                            ],
+                            "@value": "Czapka męska adidas Originals Trefoil CD6973"
+                            }
+                            ],
+                        
+                            "s:description": [
+                            {
+                            "@type": [
+                            "gs1:productDescription",
+                            "s:description"
+                            ],
+                            "@value": "Czapka adidas Originals Trefoil CD6973"
+                            }
+                            ],
+                        
+                            "s:productID": "mpn:CD6973",
+                        
+                            "s:brand": [
+                            {
+                            "@type": [
+                            "gs1:Brand",
+                            "s:Brand"
+                            ],
+                            "@value": "adidas Originals",
+                            "s:url": "https://sneakerstudio.pl//firm-pol-1308137276-adidas-Originals.html"
+                            }]
+                        
+
+
+                        },
+                        "s:offers": [
+                        
+                            {
+                            "@type": [
+                            "gs1:Offer",
+                            "s:Offer"
+                            ],
+                            "s:availability": "http://schema.org/InStock",
+                            "s:price": "69.00",
+                            "s:priceCurrency": "PLN",
+                            "s:url": "/product-pol-16782-Czapka-meska-adidas-Originals-Trefoil-CD6973.html?selected_size=onesize"
+                            }
+                        
+                        ]
+                        }
+                    </script><script type="text/javascript">
+              loadWS.init({
+                'request':"",
+                'additional':'',
+                'type':'projector'
+,'productID':'16782'
+              })
+         </script></footer></div><script type="text/javascript">app_shop.runApp();</script><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script><script type="text/javascript">
+                        var google_tag_params = {
+                        ecomm_prodid: "16782",
+                        ecomm_pagetype: "product",
+                        ecomm_category: "Akcesoria i dodatki",
+                        ecomm_totalvalue: 69,
+                        a: "",
+                        g: ""
+                        };
+                        </script><script type="text/javascript">
+                /* <![CDATA[ */
+                var google_conversion_id = 817660656;
+                var google_custom_params = window.google_tag_params;
+                var google_remarketing_only = true;
+                /* ]]> */
+                </script>
+                <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+                </script>
+                <noscript>
+                <div style="display:inline;">
+                <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/817660656/?value=0&guid=ON&script=0"/>
+                </div>
+                </noscript>
+<!-- Begin additional html or js -->
+
+<script type="text/javascript">
+(function(){ var x = document.createElement('script'); x.async = true;
+x.src = "//creativecdn.com/tags?type=script&id=pr_JUph3rWg2t9tPiYAiyaK_offer_16782"; document.getElementsByTagName('head')[0].appendChild(x); }());
+</script><img src="//pixel.onaudience.com/?event=17366282" width="0" height="0">
+<script type="text/javascript">(function($){
+  window._edrone = window._edrone || {};
+  window._edrone_send_handler = function() {
+      _edrone.first_run = false;
+      var product_id = '16782';
+      $.ajax({
+          url: 'ajax/projector.php?product=' + product_id + '&size=onesize&action=get&get=pictures',
+          dataType: "json",
+          success: function(data) {
+              if (data.pictures[1].data.url[0] !== '/') {
+                  data.pictures[1].data.url = '/' + data.pictures[1].data.url;
+              }
+              _edrone.product_images = window.location.protocol + '//' + window.location.host + data.pictures[1].data.url;
+              _edrone.product_skus = '';
+              _edrone.product_ids = product_id;
+              _edrone.product_titles = 'Czapka męska adidas Originals Trefoil CD6973';
+              _edrone.product_urls = window.location.href;
+              _edrone.base_currency = 'PLN';
+              _edrone.product_category_ids = '1214554658';
+              _edrone.product_category_names = 'Akcesoria i dodatki';
+              _edrone.action_type = 'product_view';
+              _edrone.init();
+          }
+      });
+      $('body').on('mousedown', '#projector_button_basket', function(){
+        if(!$('#projector_sizes_cont').is(':visible') || (!$('#projector_sizes_cont').length ||$('#projector_sizes_cont').find('.active').length !== 0)){
+          _edrone.action_type = 'add_to_cart';
+          _edrone.init();
+        }
+      });
+  }
+})(window.jQuery)
+</script><div id="ck_dsclr" class="no_print" style="bottom: 0; opacity: 0.9; filter: alpha(opacity=90); background:
+            #f1f1f1; border-bottom: 1px solid 
+            #c3c7c8; border-top: 1px solid 
+            #c3c7c8; left: 0px; position: fixed; right: 0px; text-align: center; z-index: 99999;">
+	<div id="ck_dsclr_sub" style="border-collapse: separate; border-spacing: 10px; color: 
+	#333; display: table; font-size: 11px; line-height: normal; margin: 0 auto; max-width: 980px; text-align: justify;">
+		<div style="display: table-cell;">Strona korzysta z plików cookie w celu realizacji usług zgodnie z <a style="color: #179ace; text-decoration: none;" href="/Polityka-prywatnosci-clinks-pol-35.html" title="Polityka dotycząca cookies">Polityką dotyczącą cookies</a>. Możesz określić warunki przechowywania lub dostępu do cookie w Twojej przeglądarce.</div>
+		<div style="background: 
+		#0090f6 ; color: 
+		#fff; cursor: pointer; padding: 2px 0px; text-align: center; vertical-align: middle; width: 65px; display: table-cell;" id="ckdsclmrshtdwn"><span>Zamknij</span></div>
+	</div>
+</div><script type="text/javascript"><!--
+function getCk(name) {var nameEQ = name + "=";var ca = document.cookie.split(';');for(var i=0;i < ca.length;i++) {var c = ca[i];while (c.charAt(0)==' ') c = c.substring(1,c.length);if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);}return null;}
+function setCk(name,value,days) {if (days) {var date = new Date(); date.setTime(date.getTime()+(days*24*60*60*1000)); var expires = "; expires="+date.toGMTString(); } else var expires = ""; document.cookie = name+"="+value+expires+"; path=/";}
+if(getCk("ck_cook")=='yes') document.getElementById('ck_dsclr').style.display = "none";
+document.getElementById('ckdsclmrshtdwn').onclick = function() {setCk("ck_cook","yes",180); document.getElementById('ck_dsclr').style.display = "none"; return false;}// --></script><!-- Facebook Pixel Code -->
+            <script>
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','//connect.facebook.net/en_US/fbevents.js');
+            // Insert Your Facebook Pixel ID below. 
+            fbq('init', '1504463889776321');
+            fbq('track', 'PageView');
+            </script>
+            <!-- Insert Your Facebook Pixel ID below. --> 
+            <noscript><img height='1' width='1' style='display:none'
+            src='https://www.facebook.com/tr?id=1504463889776321&amp;ev=PageView&amp;noscript=1'
+            /></noscript>
+            <script>fbq('track', 'ViewContent', {"content_ids":"['16782']","content_type":"product","content_name":"Czapka męska adidas Originals Trefoil CD6973","currency":"PLN","value":"69.00"});</script>
+            <!-- End Facebook Pixel Code -->
+
+<!-- End additional html or js -->
+</body></html>
+
