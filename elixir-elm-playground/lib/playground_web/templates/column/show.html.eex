@@ -1,0 +1,23 @@
+<h2>Show Column</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @column.name %>
+  </li>
+
+  <li>
+    <strong>Weight:</strong>
+    <%= @column.weight %>
+  </li>
+
+  <li>
+    <strong>Board ID:</strong>
+    <%= @column.board_id %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: column_path(@conn, :edit, @column) %></span>
+<span><%= link "Back", to: column_path(@conn, :index) %></span>

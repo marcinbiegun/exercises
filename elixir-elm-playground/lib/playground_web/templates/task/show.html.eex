@@ -1,0 +1,33 @@
+<h2>Show Task</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @task.name %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @task.description %>
+  </li>
+
+  <li>
+    <strong>Weight:</strong>
+    <%= @task.weight %>
+  </li>
+
+  <li>
+    <strong>Is done:</strong>
+    <%= @task.is_done %>
+  </li>
+
+  <li>
+    <strong>Column ID:</strong>
+    <%= @task.column_id %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: task_path(@conn, :edit, @task) %></span>
+<span><%= link "Back", to: task_path(@conn, :index) %></span>

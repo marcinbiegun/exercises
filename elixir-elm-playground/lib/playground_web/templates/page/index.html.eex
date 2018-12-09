@@ -1,0 +1,30 @@
+<div id="elm-container"></div>
+
+<div class="row marketing">
+  <div class="col-lg-6">
+    <h4>Created by</h4>
+    <ul>
+      <li>
+        <a href="https://n23.pl">Marcin Biegun</a>
+      </li>
+      <li>
+        <a href="https://github.com/marcinbiegun/elixir-elm-playground">Source Code</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h4>Built with</h4>
+    <ul>
+      <li>
+        <a href="https://elixir-lang.org/">Elixir</a>
+      </li>
+      <li>
+        <a href="http://phoenixframework.org/">Phoenix</a>
+      </li>
+      <li>
+        <a href="http://elm-lang.org/">Elm</a>
+      </li>
+    </ul>
+  </div>
+</div>

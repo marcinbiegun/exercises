@@ -1,0 +1,30 @@
+<h2>Listing Columns</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Weight</th>
+      <th>Board ID</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for column <- @columns do %>
+    <tr>
+      <td><%= column.name %></td>
+      <td><%= column.weight %></td>
+      <td><%= column.board_id %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: column_path(@conn, :show, column), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: column_path(@conn, :edit, column), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: column_path(@conn, :delete, column), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Columns", to: column_path(@conn, :new) %></span>
