@@ -7,10 +7,10 @@ This is a technical task I've got during a recruitment process.
 Your are given an input with is a string containing a number of digits
 separated by spaces.
 
-# Example input
+Sample input:
 
 ```
-3 4 2 3 2 1 4 4 2 0 3 4 1 1 2 3 4
+ 3 4 2 6 2 6 0 2 3 0 0 2 8 8 9 2 1 4
 ```
 
 The first digit is amount of results requested.
@@ -30,6 +30,9 @@ The scores outside of grid are 0.
 For the example input, the solution would be:
 
 ```
+ (2, 1, score: 37)
+ (2, 2, score: 30)
+ (3, 1, score: 27)
 ```
 
 ## Running the code
