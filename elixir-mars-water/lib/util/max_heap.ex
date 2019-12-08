@@ -18,7 +18,7 @@ defmodule MarsWater.Util.MaxHeap do
     %MaxHeap{list: new_list, size: new_size}
   end
 
-  def delete_smallest(%MaxHeap{list: list, size: size}) do
+  def delete_root(%MaxHeap{list: list, size: size}) do
     value = Enum.at(list, 1)
     new_list = List.replace_at(list, 1, Enum.at(list, size))
     {_value, new_list} = List.pop_at(new_list, size)

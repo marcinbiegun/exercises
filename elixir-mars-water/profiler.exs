@@ -8,7 +8,8 @@ defmodule Profiler do
 
       #File.read!(path) |> MarsWater.Algos.Simple.run()
       #File.read!(path) |> MarsWater.Algos.SlidingWindow.run()
-      MarsWater.Algos.Streaming.run(path)
+      # MarsWater.Algos.Streaming.run(path)
+      File.read!(path) |> MarsWater.Algos.Heap.run()
     end
   end
 

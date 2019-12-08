@@ -21,35 +21,35 @@ defmodule MarsWater.Util.MinMaxHeapTest do
       |> MaxHeap.insert({1, "data"})
       |> MaxHeap.insert({4, "data"})
 
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 100
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 36
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 25
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 19
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 17
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 15
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 13
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 12
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 11
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 9
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 8
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 6
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 5
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 4
-      { {score, _data}, heap } = MaxHeap.delete_smallest(heap)
+      { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 1
     end
   end
