@@ -49,7 +49,7 @@ defmodule MarsWater.Util.MinMaxHeapTest do
       assert score == 5
       { {score, _data}, heap } = MaxHeap.delete_root(heap)
       assert score == 4
-      { {score, _data}, heap } = MaxHeap.delete_root(heap)
+      { {score, _data}, _heap } = MaxHeap.delete_root(heap)
       assert score == 1
     end
   end
