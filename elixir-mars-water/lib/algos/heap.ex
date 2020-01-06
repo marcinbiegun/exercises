@@ -1,7 +1,7 @@
 defmodule MarsWater.Algos.Heap do
   alias MarsWater.Util.MaxHeap
 
-  @count_solutions_every 1000
+  @count_solutions_every 100
 
   def run(input) when is_binary(input) do
     [results_requested, grid_size | measurements] =
