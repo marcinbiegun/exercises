@@ -17,3 +17,7 @@ CalcPrime.is_prime?(9)
 "67280421310721 is a prime number"
 ```
 
+## Resources
+
+List of a few large prime numbers: https://en.wikipedia.org/wiki/Largest_known_prime_number
+
