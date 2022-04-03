@@ -13,3 +13,9 @@ TEST_CASE("test processLine()") {
     CHECK(shifts[2] == 1);
     CHECK(shifts[3] == 1);
 }
+
+TEST_CASE("test readBinaryLine()") {
+    std::string line = "0011";
+
+    CHECK(readBinaryLine(line) == std::vector<bool>{0, 0, 1, 1});
+}
