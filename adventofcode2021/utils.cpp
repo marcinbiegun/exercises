@@ -27,6 +27,16 @@ std::vector<std::string> getInputLines(std::string filePath)
   return strings;
 }
 
+std::string getInputString(std::string filePath) {
+  std::ifstream inputFile(filePath);
+
+  // Read file
+  std::stringstream buffer;
+  buffer << inputFile.rdbuf();
+
+  return buffer.str();
+}
+
 std::tuple<bool, int> safeStrToInt(std::string str)
 {
   std::tuple<bool, int> errResponse = std::make_tuple(false, 0);
@@ -93,6 +103,11 @@ std::vector<std::string> splitString(std::string str, char splitter)
   return result;
 }
 
+int intPow(int b, int e)
+{
+    return (e == 0) ? 1 : b * intPow(b, e - 1);
+}
+
 int binaryToInt(std::vector<bool> binary)
 {
   int result = 0;
@@ -101,7 +116,7 @@ int binaryToInt(std::vector<bool> binary)
   for (int i = 0; i < binarySize; i++)
   {
     if (binary[i] == true)
-      result += std::pow(2, binarySize - 1 - i);
+      result += intPow(2, binarySize - 1 - i);
   }
 
   return result;

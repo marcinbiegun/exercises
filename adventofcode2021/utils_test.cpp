@@ -17,3 +17,23 @@ TEST_CASE("test binaryToInt()") {
     CHECK(binaryToInt(binary17) == 17);
     CHECK(binaryToInt(binary25) == 25);
 }
+
+TEST_CASE("safeStrToInt whitespace test") {
+    std::tuple<bool, int> result = std::make_tuple(false, -1);
+    
+    result = safeStrToInt(std::string("55"));
+    CHECK(std::get<0>(result) == true);
+    CHECK(std::get<1>(result) == 55);
+
+    result = safeStrToInt(std::string("   55"));
+    CHECK(std::get<0>(result) == true);
+    CHECK(std::get<1>(result) == 55);
+
+    result = safeStrToInt(std::string("   55     "));
+    CHECK(std::get<0>(result) == true);
+    CHECK(std::get<1>(result) == 55);
+
+    result = safeStrToInt(std::string("\n   55   \n  "));
+    CHECK(std::get<0>(result) == true);
+    CHECK(std::get<1>(result) == 55);
+}
