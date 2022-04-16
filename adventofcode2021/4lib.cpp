@@ -8,16 +8,15 @@
 #include "utils.cpp"
 
 const int BINGO_SIZE = 5;
-typedef std::array<int, 5> int_array_5;
-typedef std::array<bool, 5> bool_array_5;
 
 struct Bingo {
 
   bool disabled = false;
-  std::array<int_array_5, 5> numbers;
-  std::array<bool_array_5, 5> selected;
-  std::array<bool_array_5, 5> selectedInverted;
+  std::array<std::array<int, BINGO_SIZE>, BINGO_SIZE> numbers;
+  std::array<std::array<bool, BINGO_SIZE>, BINGO_SIZE> selected;
+  std::array<std::array<bool, BINGO_SIZE>, BINGO_SIZE> selectedInverted;
 
+  // Initialize empty board with -1 values
   Bingo() {
     for (auto& row : numbers) {
       row.fill(-1);
@@ -30,10 +29,8 @@ struct Bingo {
     }
   }
 
+  // Initialize board with text
   Bingo(std::string InText) {
-    for (auto& row : numbers) {
-      row.fill(-1);
-    }
     for (auto& row : selected) {
       row.fill(false);
     }
@@ -67,7 +64,6 @@ struct Bingo {
       x++;
     }
   }
-
 
   bool IsWon() {
     for (auto& row : selected) {

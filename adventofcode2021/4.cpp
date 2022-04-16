@@ -33,8 +33,10 @@ int main()
     } else {
       // Reset bingo input
       if (s == std::string("")) {
-        // Save bingo input as a new Bingo object
         if (BingoLines > 0) {
+          // std::cout << "Saving Bingo\n";
+          // std::cout << BingoStr;
+          // std::cout << "\n";
           Bingo newBingo = Bingo(BingoStr);
           bingos.push_back(newBingo);
           BingoStr.clear();
@@ -72,37 +74,23 @@ int main()
 
   // For each number
   for (int number : InputNumbers) {
-    counter++;
     std::cout << "Selecting number " << counter << "/" << InputNumbers.size() << "\n";
 
-    // For each bingo board
-    std::vector<Bingo>::iterator it;
-    for (it = bingos.begin(); it != bingos.end();) {
-      // Mark number
-      it->SelectNumber(number);
+    // For each bingo
+    for (Bingo& bingo : bingos) {
 
-      // If is won
-      if (it->IsWon()) {
-
-        // Check if this is the final solution
-        if (bingos.size() == 1) {
-          std::cout << "FOUND THE LAST BOARD WINNER!" << "\n";
-          int finalResult = it->SumOfUnselected() * number;
-          std::cout << "The final result is: " << finalResult << "\n";
-          return 0;
-        }
-
-        // Remove bingo board
-        it = bingos.erase(it); 
-        std::cout << "Removing winner (" << bingos.size() << " bingos left)\n";
-      }
-      else
-      {
-         ++it;
+      // Select and check win condition
+      bingo.SelectNumber(number);
+      if (bingo.IsWon()) {
+        std::cout << "FOUND A WINNER!" << "\n";
+        int finalResult = bingo.SumOfUnselected() * number;
+        std::cout << "The final result is: " << finalResult << "\n";
+        return 0;
       }
     }
+    counter++;
   }
 
-  std::cout << "Last winning board not found :(" << "\n";
+  std::cout << "No winner found :(" << "\n";
   return 0;
 }
