@@ -14,9 +14,8 @@ int main() {
     }
 
     int days = 256;
-    int totalFishes = Day6Dynamic::solve(numbers, days);
-
-    std::cout << "After " << days << " there are " << totalFishes << " fishes.";
+    unsigned long long int totalFishes = Day6Dynamic::solve(numbers, days);
+    std::cout << "After " << days << " there are total fishes: " << totalFishes << std::endl;
 
     return 0;
 }
