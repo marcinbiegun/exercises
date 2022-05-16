@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "shapes.cpp"
+#include "../inc/shapes.cpp"
 
 float getArea(Inheritance::Shape* shape) {
     return shape->Area();
