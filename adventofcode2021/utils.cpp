@@ -5,6 +5,8 @@
 #include <vector>
 #include <tuple>
 #include <cmath>
+#include <algorithm>
+#include <set>
 
 /**
  * Returns textfile lines content as vector<string>
@@ -101,6 +103,39 @@ std::vector<std::string> splitString(std::string str, char splitter)
   if (current.size() != 0)
     result.push_back(current);
   return result;
+}
+
+bool isWhitespace(const char& c) {
+  std::set<char> whitespace{' ', '\n', '\t'};
+  return std::find(whitespace.begin(), whitespace.end(), c) != whitespace.end();
+}
+
+std::string strip(std::string str) {
+  int frontWhitespaces = 0;
+
+  // Whitespace from start
+  for (int i = 0; i < str.length(); i++) {
+    // If is whitespace
+    if (isWhitespace(str[i])) {
+      frontWhitespaces++;
+    } else {
+      break;
+    }
+  }
+
+  int backWhitespaces = 0;
+
+  // Whitespace from end
+  for (int i = str.length() - 1; i >= 0; i--) {
+    // If is whitespace
+    if (isWhitespace(str[i])) {
+      backWhitespaces++;
+    } else {
+      break;
+    }
+  }
+
+  return str.substr(frontWhitespaces, str.size() - frontWhitespaces - backWhitespaces);
 }
 
 int intPow(int b, int e)

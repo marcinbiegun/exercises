@@ -37,3 +37,16 @@ TEST_CASE("safeStrToInt whitespace test") {
     CHECK(std::get<0>(result) == true);
     CHECK(std::get<1>(result) == 55);
 }
+
+TEST_CASE("isWhitespace") {
+    CHECK(isWhitespace('A') == false);
+    CHECK(isWhitespace(' ') == true);
+}
+
+TEST_CASE("strip") {
+    CHECK(strip("hello") == "hello");
+    CHECK(strip(" hello") == "hello");
+    CHECK(strip("    hello") == "hello");
+    CHECK(strip("    hello   ") == "hello");
+    CHECK(strip("    hello\n") == "hello");
+}
